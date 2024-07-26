@@ -177,31 +177,26 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
+          </div>
 
-            <div className="relative md:hidden h-[100vh]">
-              <img
-                src="https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/449012af-b66b-4de0-b1a8-3d3e85b9196d/24990dd2bc453748013327e58d39340.jpg?content-type=image%2Fjpeg"
-                alt="kylin img"
-                className="m-16 -ml-24 w-full h-2/3 object-cover rounded-e-xl shadow-lg"
-              />
-              <div className="absolute bottom-0 flex flex-col p-8 m-8 -mr-16 pr-24 bg-white shadow-lg rounded-xl">
-                <h1 className="mb-4">The Livestreaming Ecommerce Frontier</h1>
-                <p>
-                  Operating in China as Kylin Cloud, we aim to provide a
-                  one-stop solution in the rapidly growing field of
-                  livestreaming ecommerce. With over 300 million RMB in annual
-                  transaction volume, we are at the very forefront of this
-                  revolution.
-                </p>
-                <div className="ml-auto mt-4">
-                  <Button
-                    type="primary"
-                    size="large"
-                    onClick={handleNavToKylin}
-                  >
-                    Learn More
-                  </Button>
-                </div>
+          <div className="relative md:hidden h-[80vh]">
+            <img
+              src="https://images.squarespace-cdn.com/content/65f5178b7e5b446365b2d70a/449012af-b66b-4de0-b1a8-3d3e85b9196d/24990dd2bc453748013327e58d39340.jpg?content-type=image%2Fjpeg"
+              alt="kylin img"
+              className="m-16 -ml-24 w-full h-2/3 object-cover rounded-e-xl shadow-lg"
+            />
+            <div className="absolute bottom-0 flex flex-col p-8 m-8 -mr-16 pr-24 bg-white shadow-lg rounded-xl">
+              <h1 className="mb-4">The Livestreaming Ecommerce Frontier</h1>
+              <p>
+                Operating in China as Kylin Cloud, we aim to provide a one-stop
+                solution in the rapidly growing field of livestreaming
+                ecommerce. With over 300 million RMB in annual transaction
+                volume, we are at the very forefront of this revolution.
+              </p>
+              <div className="ml-auto mt-4">
+                <Button type="primary" size="large" onClick={handleNavToKylin}>
+                  Learn More
+                </Button>
               </div>
             </div>
           </div>
