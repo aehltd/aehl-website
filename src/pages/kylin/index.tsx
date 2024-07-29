@@ -11,7 +11,7 @@ const KylinOverviewPage = () => {
 
   return (
     <div id="container" className="container">
-      <div className="relative flex w-full md:h-[80vh] justify-center overflow-hidden text-center">
+      <div className="relative flex w-full justify-center overflow-hidden text-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{

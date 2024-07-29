@@ -15,7 +15,7 @@ const HomePage = () => {
 
   return (
     <div id="container" className="container">
-      <div className="relative flex w-full md:h-[75vh] justify-center overflow-hidden text-center">
+      <div className="relative flex w-full justify-center overflow-hidden text-center">
         <div
           className="absolute inset-0 bg-cover bg-center filter blur-sm"
           style={{
@@ -50,7 +50,7 @@ const HomePage = () => {
       </div>
 
       <div id="ceo-message" className="row">
-        <div className="block md:flex md:space-x-8 space-y-8 md:space-y-0 ">
+        <div className="flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0 ">
           <div className="flex-1">
             <h1 className="mb-4">CEO Message</h1>
             <p className="text-slate-600">
@@ -68,11 +68,11 @@ const HomePage = () => {
               our shareholders.
             </p>
           </div>
-          <div className="flex flex-col items-end justify-end w-full md:w-56 3xl:w-96">
+          <div className="flex flex-col items-end justify-end">
             <img
               src="https://images.squarespace-cdn.com/content/v1/65f5178b7e5b446365b2d70a/078ea913-4f11-49ae-a1fa-980bc7ae2081/weilai-zhang.png"
               alt="ceo"
-              className="w-full mb-8 object-cover rounded-md drop-shadow-md"
+              className="w-56 mb-8 object-cover rounded-md drop-shadow-md"
             />
             <h2>Weilai "Will" Zhang</h2>
             <p>AEHL Chairman and CEO</p>

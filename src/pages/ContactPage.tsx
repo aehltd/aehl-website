@@ -5,7 +5,7 @@ const ContactPage = () => {
   return (
     <div id="container" className="container">
       <div
-        className="bg-local flex w-full h-[65vh] justify-center"
+        className="bg-local flex w-full h-[50vh] justify-center"
         style={{
           backgroundImage:
             "url('https://www.aehlus.com/png/img3.0cd01d99.png')",
