@@ -13,7 +13,7 @@ const IRStockPage = () => {
           <div className="flex w-full flex-col md:flex-row items-center space-y-4 md:space-y-0">
             <div className="flex flex-col">
               <h1 className="text-white">Stock Information</h1>
-              <p className="smalltext text-white">
+              <p className="xsmalltext text-white">
                 AEHL New Energy, Inc. Ordinary Shares (AEHL)
               </p>
             </div>

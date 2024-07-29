@@ -68,11 +68,11 @@ const HomePage = () => {
               our shareholders.
             </p>
           </div>
-          <div className="flex flex-col items-end justify-end w-full md:w-56">
+          <div className="flex flex-col items-end justify-end w-full md:w-56 3xl:w-96">
             <img
               src="https://images.squarespace-cdn.com/content/v1/65f5178b7e5b446365b2d70a/078ea913-4f11-49ae-a1fa-980bc7ae2081/weilai-zhang.png"
               alt="ceo"
-              className="w-56 mb-8 object-cover rounded-md drop-shadow-md"
+              className="w-full mb-8 object-cover rounded-md drop-shadow-md"
             />
             <h2>Weilai "Will" Zhang</h2>
             <p>AEHL Chairman and CEO</p>

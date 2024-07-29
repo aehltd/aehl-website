@@ -97,7 +97,7 @@ const USOverview = () => {
                   <h3 className="text-white drop-shadow-lg font-semibold">
                     Consistent Service
                   </h3>
-                  <p className="text-xxs sm:text-xs text-white drop-shadow-lg">
+                  <p className="minitext sm:text-xs text-white drop-shadow-lg">
                     Tech operators companies generally do not switch service
                     providers easily
                   </p>
@@ -114,7 +114,7 @@ const USOverview = () => {
                   <h3 className="text-white drop-shadow-lg font-semibold">
                     Stability
                   </h3>
-                  <p className="text-xxs sm:text-xs text-white drop-shadow-lg">
+                  <p className="minitext sm:text-xs text-white drop-shadow-lg">
                     Consistent and stable power supply is the core of
                     technological infrastructure
                   </p>
@@ -133,7 +133,7 @@ const USOverview = () => {
                   <h3 className="text-white drop-shadow-lg font-semibold">
                     Profit Share
                   </h3>
-                  <p className="text-xxs sm:text-xs text-white drop-shadow-lg">
+                  <p className="minitext sm:text-xs text-white drop-shadow-lg">
                     Balancing interests in energy, power generation,
                     transmission, infrastructure & server operations
                   </p>
@@ -150,7 +150,7 @@ const USOverview = () => {
                   <h3 className="text-white drop-shadow-lg font-semibold">
                     Maximizing Profit
                   </h3>
-                  <p className="text-xxs sm:text-xs text-white drop-shadow-lg">
+                  <p className="minitext sm:text-xs text-white drop-shadow-lg">
                     Maximizing value in the digital infrastructure industry
                   </p>
                 </div>

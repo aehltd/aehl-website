@@ -12,7 +12,7 @@ const FullNavBar = () => {
   const isIRPage = useIsIRPage();
 
   return (
-    <nav className="w-screen">
+    <nav>
         <NavBar />
         {isIRPage && <IRMenu />}
     </nav>

@@ -85,19 +85,19 @@ const CommitteeComposition = () => {
       <table className="max-w-full divide-y divide-gray-200 table-auto w-full">
         <thead className="bg-slate-400 text-white">
           <tr>
-            <th className="px-6 py-3 text-center text-xs font-medium uppercase tracking-wider">
+            <th className="px-6 py-3 text-center xsmalltext font-medium uppercase tracking-wider">
               Director
             </th>
-            <th className="px-6 py-3 text-center text-xs font-medium uppercase tracking-wider">
+            <th className="px-6 py-3 text-center xsmalltext font-medium uppercase tracking-wider">
               Position
             </th>
-            <th className="px-6 py-3 text-center text-xs font-medium uppercase tracking-wider">
+            <th className="px-6 py-3 text-center xsmalltext font-medium uppercase tracking-wider">
               Audit Committee
             </th>
-            <th className="px-6 py-3 text-center text-xs font-medium uppercase tracking-wider">
+            <th className="px-6 py-3 text-center xsmalltext font-medium uppercase tracking-wider">
               Compensation Committee
             </th>
-            <th className="px-6 py-3 text-center text-xs font-medium uppercase tracking-wider">
+            <th className="px-6 py-3 text-center xsmalltext font-medium uppercase tracking-wider">
               Nominating Committee
             </th>
           </tr>

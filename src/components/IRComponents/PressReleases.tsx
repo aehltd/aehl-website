@@ -87,7 +87,7 @@ const PressReleasesRow = () => {
           <a className="truncate block hover:text-blue-500" href={entry.link}>
             {entry.title}
           </a>
-          <p className="smalltext">{entry.date}</p>
+          <p className="xsmalltext">{entry.date}</p>
           <Divider className="my-4 " />
         </li>
       ))}

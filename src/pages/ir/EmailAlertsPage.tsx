@@ -21,16 +21,16 @@ const IREmailAlertsPage = () => {
             <div className="space-y-4">
               <div className="flex space-x-4">
                 <div>
-                  <label>First Name</label>
+                  <label className="smalltext">First Name</label>
                   <Input placeholder="John" />
                 </div>
                 <div>
-                  <label>Last Name</label>
+                  <label className="smalltext">Last Name</label>
                   <Input placeholder="Doe" />
                 </div>
               </div>
               <div>
-                <label>Email Address</label>
+                <label className="smalltext">Email Address</label>
                 <Input placeholder="john.doe@gmail.com" />
               </div>
             </div>
@@ -38,14 +38,14 @@ const IREmailAlertsPage = () => {
           <div className="space-y-4">
             <h3>Select the alerts that you would like to recieve: </h3>
             <div className="flex flex-col">
-              <Checkbox onChange={() => {}}>Select All</Checkbox>
-              <Checkbox onChange={() => {}}>News Releases</Checkbox>
-              <Checkbox onChange={() => {}}>Events and Presentations</Checkbox>
-              <Checkbox onChange={() => {}}>SEC Filings and Reports</Checkbox>
-              <Checkbox onChange={() => {}}>Stock Information</Checkbox>
+              <Checkbox className="text" onChange={() => {}}>Select All</Checkbox>
+              <Checkbox className="text" onChange={() => {}}>News Releases</Checkbox>
+              <Checkbox className="text" onChange={() => {}}>Events and Presentations</Checkbox>
+              <Checkbox className="text" onChange={() => {}}>SEC Filings and Reports</Checkbox>
+              <Checkbox className="text" onChange={() => {}}>Stock Information</Checkbox>
             </div>
           </div>
-          <Button type="primary">Subscribe</Button>
+          <Button className="text"  type="primary">Subscribe</Button>
         </div>
       </div>
       <div

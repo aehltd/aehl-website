@@ -32,48 +32,57 @@ const IREmailAlertsPage = lazy(() => import("./pages/ir/EmailAlertsPage"));
 
 const App = () => {
   return (
-    <div className="w-screen h-screen flex flex-col">
+    <div className="min-h-screen max-h-screen flex flex-col overflow-hidden">
       <Router>
-        <FullNavBar />
-        <div className="overflow-y-auto w-screen">
-          <Suspense fallback={<LoadingPage/>}>
-            <Routes>
-              <Route path="/" element={<HomePage />} />
+        <header className="flex-none">
+          <FullNavBar />
+        </header>
+        <div className="flex flex-1 flex-col overflow-y-auto">
+          <main className="flex-1">
+            <Suspense fallback={<LoadingPage />}>
+              <Routes>
+                <Route path="/" element={<HomePage />} />
 
-              <Route path="/aehl-us/overview" element={<USOverview />} />
-              <Route path="/aehl-us/products" element={<USProductsPage />} />
-              <Route path="/aehl-us/metrics" element={<USMetricsPage />} />
+                <Route path="/aehl-us/overview" element={<USOverview />} />
+                <Route path="/aehl-us/products" element={<USProductsPage />} />
+                <Route path="/aehl-us/metrics" element={<USMetricsPage />} />
 
-              <Route
-                path="/aehl-kylin/overview"
-                element={<KylinOverviewPage />}
-              />
-              <Route path="/aehl-kylin/model" element={<KylinModelPage />} />
+                <Route
+                  path="/aehl-kylin/overview"
+                  element={<KylinOverviewPage />}
+                />
+                <Route path="/aehl-kylin/model" element={<KylinModelPage />} />
 
-              <Route path="/ir" element={<IROverviewPage />} />
-              <Route path="/ir/overview" element={<IROverviewPage />} />
-              <Route path="/ir/press-releases" element={<IRNewsPage />} />
-              <Route
-                path="/ir/events-presentations"
-                element={<IREventsPresentationsPage />}
-              />
-              <Route path="/ir/sec-filings" element={<IRFilingsPage />} />
-              <Route path="/ir/stock-information" element={<IRStockPage />} />
-              <Route path="/ir/documents" element={<IRDocumentsPage />} />
-              <Route
-                path="/ir/committee-composition"
-                element={<IRCompositionPage />}
-              />
-              <Route path="/ir/board" element={<IRBoardPage />} />
-              <Route path="/ir/contact-ir" element={<IRContactPage />} />
-              <Route path="/ir/faqs" element={<IRFAQPage />} />
-              <Route path="/ir/email-alerts" element={<IREmailAlertsPage />} />
+                <Route path="/ir" element={<IROverviewPage />} />
+                <Route path="/ir/overview" element={<IROverviewPage />} />
+                <Route path="/ir/press-releases" element={<IRNewsPage />} />
+                <Route
+                  path="/ir/events-presentations"
+                  element={<IREventsPresentationsPage />}
+                />
+                <Route path="/ir/sec-filings" element={<IRFilingsPage />} />
+                <Route path="/ir/stock-information" element={<IRStockPage />} />
+                <Route path="/ir/documents" element={<IRDocumentsPage />} />
+                <Route
+                  path="/ir/committee-composition"
+                  element={<IRCompositionPage />}
+                />
+                <Route path="/ir/board" element={<IRBoardPage />} />
+                <Route path="/ir/contact-ir" element={<IRContactPage />} />
+                <Route path="/ir/faqs" element={<IRFAQPage />} />
+                <Route
+                  path="/ir/email-alerts"
+                  element={<IREmailAlertsPage />}
+                />
 
-              <Route path="/contact-us" element={<ContactPage />} />
-              <Route path="*" element={<NotFoundPage />} />
-            </Routes>
-          </Suspense>
-          <Footer />
+                <Route path="/contact-us" element={<ContactPage />} />
+                <Route path="*" element={<NotFoundPage />} />
+              </Routes>
+            </Suspense>
+          </main>
+          <footer className="flex-none">
+            <Footer />
+          </footer>
         </div>
       </Router>
     </div>

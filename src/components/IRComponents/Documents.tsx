@@ -35,10 +35,10 @@ const Documents = () => {
       <table className="max-w-full divide-y divide-gray-200 table-auto w-full">
         <thead className="bg-slate-400 text-white">
           <tr>
-            <th className="px-6 py-3 text-start text-xs font-medium uppercase tracking-wider">
+            <th className="px-6 py-3 text-start xsmalltext text-white font-medium uppercase tracking-wider">
               Document
             </th>
-            <th className="px-6 py-3 text-end text-xs font-medium uppercase tracking-wider">
+            <th className="px-6 py-3 text-end xsmalltext text-white font-medium uppercase tracking-wider">
               Download
             </th>
           </tr>
@@ -49,7 +49,7 @@ const Documents = () => {
               key={index}
               className={index % 2 === 0 ? "bg-white" : "bg-slate-100"}
             >
-              <td className="px-6 py-3 whitespace-nowrap text-start">
+              <td className="px-6 py-3 whitespace-nowrap text text-black text-start">
                 {document.name}
               </td>
               <td className="flex flex-row-reverse px-6 py-3 whitespace-nowrap items-center justify-start space-x-10">

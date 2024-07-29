@@ -90,7 +90,7 @@ const InfrastructureChain: React.FC<ChainProps> = ({ chain }) => {
           alt={chain.name}
           className="w-6 object-scale-down"
         />
-        <p className="text-white text-sm text-center">{chain.name}</p>
+        <p className="text-white smalltext text-center">{chain.name}</p>
       </div>
       <ul className="flex justify-between mt-2 mx-2">
         {chain.items.map((item, index) => (
