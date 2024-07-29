@@ -1,5 +1,7 @@
 import React from "react";
 import SECFilingsRow from "../../components/IRComponents/SECFilings";
+import QModComponent from "../../components/QModWidget";
+import QModFooter from "../../components/QModFooter";
 
 const IRFilingsPage = () => {
   return (
@@ -11,6 +13,12 @@ const IRFilingsPage = () => {
       </div>
       <div id="sec" className="row">
         <SECFilingsRow />
+      </div>
+      <div className="row">
+        <QModComponent tool={"filings"} />
+      </div>
+      <div className="row">
+        <QModFooter />
       </div>
     </div>
   );
