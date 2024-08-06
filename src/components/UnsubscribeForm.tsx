@@ -15,9 +15,7 @@ const UnsubscribeForm = () => {
         data-netlify-honeypot="bot-field"
         hidden
       >
-        <input type="text" name="name" />
         <input type="email" name="email" />
-        <textarea name="message"></textarea>
       </form>
 
       <Form layout="vertical" name="uf" method="post" onFinish={handleSubmit}>
