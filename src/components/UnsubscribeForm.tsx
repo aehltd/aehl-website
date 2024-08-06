@@ -52,3 +52,5 @@ const UnsubscribeForm = () => {
     </>
   );
 };
+
+export default UnsubscribeForm;

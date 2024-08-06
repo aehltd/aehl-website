@@ -1,13 +1,14 @@
 import React from "react";
 import { Form, Button, Checkbox, Input } from "antd";
+import UnsubscribeForm from "../../components/UnsubscribeForm";
 // import { FormInstance } from "antd";
 // import QModComponent from "../../components/QModWidget";
 // import QModFooter from "../../components/QModFooter";
 
 //TODO: IMPLEMENT FORMS
 const IREmailAlertsPage = () => {
-  const handleFinish = (values:any) => {
-    console.log('Form submitted:', values);
+  const handleFinish = (values: any) => {
+    console.log("Form submitted:", values);
   };
 
   return (
@@ -92,35 +93,9 @@ const IREmailAlertsPage = () => {
           backgroundSize: "cover",
         }}
       >
-        <Form
-          layout="vertical"
-          name="unsubscribe-form"
-          method="POST"
-          data-netlify="true"
-          className="row"
-          onFinish={handleFinish}
-        >
-          <input type="hidden" name="form-name" value="unsubscribe" />
-
-          <h1>Unsubscribe from Email Alerts</h1>
-          <div className="max-w-lg">
-            <h2 className="mb-4">Enter your email address below.</h2>
-            <div>
-              <Form.Item
-                label="Email Address"
-                name="email"
-                className="smalltext"
-              >
-                <Input name="email" placeholder="john.doe@gmail.com" />
-              </Form.Item>
-            </div>
-          </div>
-          <Button className="text" 
-            type="primary" 
-            htmlType="submit">
-            Unsubscribe
-          </Button>
-        </Form>
+        <div className="row">
+          <UnsubscribeForm />
+        </div>
       </div>
     </div>
   );
