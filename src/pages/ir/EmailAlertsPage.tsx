@@ -93,7 +93,7 @@ const IREmailAlertsPage = () => {
         }}
       >
         <Form
-          // layout="vertical"
+          layout="vertical"
           name="unsubscribe-form"
           method="POST"
           data-netlify="true"
@@ -111,7 +111,7 @@ const IREmailAlertsPage = () => {
                 name="email"
                 className="smalltext"
               >
-                <input name="email" placeholder="john.doe@gmail.com" />
+                <Input name="email" placeholder="john.doe@gmail.com" />
               </Form.Item>
             </div>
           </div>
