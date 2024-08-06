@@ -1,10 +1,17 @@
 import React from "react";
 import { Form, Button, Checkbox, Input } from "antd";
+// import { FormInstance } from "antd";
 // import QModComponent from "../../components/QModWidget";
 // import QModFooter from "../../components/QModFooter";
 
 //TODO: IMPLEMENT FORMS
 const IREmailAlertsPage = () => {
+  // const [form] = Form.useForm<FormInstance>();
+
+  const handleFinish = (values:any) => {
+    console.log('Form submitted:', values);
+  };
+
   return (
     <div className="container" id="container">
       <div className="flex w-full justify-center bg-slate-400">
@@ -24,6 +31,7 @@ const IREmailAlertsPage = () => {
           method="POST"
           data-netlify="true"
           className="max-w-lg"
+          onFinish={handleFinish}
         >
           <input type="hidden" name="form-name" value="subscribe" />
           <div className="flex space-x-4">
@@ -86,12 +94,13 @@ const IREmailAlertsPage = () => {
           backgroundSize: "cover",
         }}
       >
-        <Form
-          layout="vertical"
+        <form
+          // layout="vertical"
           name="unsubscribe"
           method="POST"
           data-netlify="true"
           className="row"
+          // onFinish={handleFinish}
         >
           <input type="hidden" name="form-name" value="unsubscribe" />
 
@@ -99,19 +108,21 @@ const IREmailAlertsPage = () => {
           <div className="max-w-lg">
             <h2 className="mb-4">Enter your email address below.</h2>
             <div>
-              <Form.Item
+              {/* <Form.Item
                 label="Email Address"
                 name="email"
                 className="smalltext"
-              >
-                <Input name="email" placeholder="john.doe@gmail.com" />
-              </Form.Item>
+              > */}
+                <input name="email" placeholder="john.doe@gmail.com" />
+              {/* </Form.Item> */}
             </div>
           </div>
-          <Button className="text" type="primary" htmlType="submit">
+          <button className="text" 
+            // type="primary" 
+            type="submit">
             Unsubscribe
-          </Button>
-        </Form>
+          </button>
+        </form>
       </div>
     </div>
   );
