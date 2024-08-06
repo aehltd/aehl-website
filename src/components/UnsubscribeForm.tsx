@@ -1,5 +1,4 @@
 import React from "react";
-import encode from "../utils/encode";
 import useForm from "./hooks/useForm";
 import { Form, Input, Button } from "antd";
 
