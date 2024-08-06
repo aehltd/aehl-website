@@ -30,5 +30,11 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root" className="max-h-full"></div>
+    <form name="contact-form" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text"  name="first-name">
+      <input type="text" name="last-name">
+      <input type="email" name="email">
+      <textarea name="message"></textarea>
+    </form>
   </body>
 </html>

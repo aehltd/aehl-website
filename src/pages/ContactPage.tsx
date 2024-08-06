@@ -68,29 +68,46 @@ const ContactPage = () => {
             form below.
           </p>
           <div className="p-4 max-w-lg border bg-white rounded-xl shadow-lg">
-            <div className="space-y-4">
+            <form
+              name="contact-form"
+              method="POST"
+              data-netlify="true"
+              className="space-y-4"
+            >
+              {/* Hidden input for Netlify */}
+              <input type="hidden" name="form-name" value="contact-form" />
+
               <div className="flex space-x-4">
                 <div>
-                  <label>First Name</label>
-                  <Input placeholder="John" />
+                  <label htmlFor="first-name">First Name</label>
+                  <Input name="first-name" placeholder="John" />
                 </div>
                 <div>
-                  <label>Last Name</label>
-                  <Input placeholder="Doe" />
+                  <label htmlFor="last-name">Last Name</label>
+                  <Input name="last-name" placeholder="Doe" />
                 </div>
               </div>
+
               <div>
-                <label>Email Address</label>
-                <Input placeholder="john.doe@gmail.com" />
+                <label htmlFor="email">Email Address</label>
+                <Input name="email" placeholder="john.doe@gmail.com" />
               </div>
+
               <div>
-                <label>Message</label>
-                <Input.TextArea rows={4} placeholder="Enter your message..." />
+                <label htmlFor="message">Message</label>
+                <Input.TextArea
+                  name="message"
+                  rows={4}
+                  placeholder="Enter your message..."
+                />
               </div>
+
               <div className="flex w-full justify-center">
-              <Button type="primary">Send</Button>
+                <Button type="primary" htmlType="submit">
+                  Send
+                </Button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
