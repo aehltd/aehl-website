@@ -1,13 +1,11 @@
 import React from "react";
 import { Form, Button, Checkbox, Input } from "antd";
-// import { FormInstance } from "antd";
+import { FormInstance } from "antd";
 // import QModComponent from "../../components/QModWidget";
 // import QModFooter from "../../components/QModFooter";
 
 //TODO: IMPLEMENT FORMS
 const IREmailAlertsPage = () => {
-  // const [form] = Form.useForm<FormInstance>();
-
   const handleFinish = (values:any) => {
     console.log('Form submitted:', values);
   };
@@ -94,13 +92,13 @@ const IREmailAlertsPage = () => {
           backgroundSize: "cover",
         }}
       >
-        <form
+        <Form
           // layout="vertical"
-          name="unsubscribe"
+          name="unsubscribe-form"
           method="POST"
           data-netlify="true"
           className="row"
-          // onFinish={handleFinish}
+          onFinish={handleFinish}
         >
           <input type="hidden" name="form-name" value="unsubscribe" />
 
@@ -108,21 +106,21 @@ const IREmailAlertsPage = () => {
           <div className="max-w-lg">
             <h2 className="mb-4">Enter your email address below.</h2>
             <div>
-              {/* <Form.Item
+              <Form.Item
                 label="Email Address"
                 name="email"
                 className="smalltext"
-              > */}
+              >
                 <input name="email" placeholder="john.doe@gmail.com" />
-              {/* </Form.Item> */}
+              </Form.Item>
             </div>
           </div>
-          <button className="text" 
-            // type="primary" 
-            type="submit">
+          <Button className="text" 
+            type="primary" 
+            htmlType="submit">
             Unsubscribe
-          </button>
-        </form>
+          </Button>
+        </Form>
       </div>
     </div>
   );
