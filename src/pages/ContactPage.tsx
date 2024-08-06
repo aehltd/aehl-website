@@ -1,5 +1,5 @@
-import { Button, Form, Input } from "antd";
 import React from "react";
+import ContactForm from "../components/ContactForm";
 
 const ContactPage = () => {
   return (
@@ -68,41 +68,7 @@ const ContactPage = () => {
             form below.
           </p>
           <div className="p-4 max-w-lg border bg-white rounded-xl shadow-lg">
-            <Form
-              layout="vertical"
-              name="contact"
-              method="POST"
-              data-netlify="true"
-            >
-              <input type="hidden" name="form-name" value="contact" />
-
-              <div className="flex space-x-4">
-                <Form.Item label="First Name" name="first-name" className="smalltext">
-                  <Input name="first-name" placeholder="John" />
-                </Form.Item>
-                <Form.Item label="Last Name" name="last-name" className="smalltext">
-                  <Input name="last-name" placeholder="Doe" />
-                </Form.Item>
-              </div>
-
-              <Form.Item label="Email Address" name="email" className="smalltext">
-                <Input name="email" placeholder="john.doe@gmail.com" />
-              </Form.Item>
-
-              <Form.Item label="Message" name="message" className="smalltext">
-                <Input.TextArea
-                  name="message"
-                  rows={4}
-                  placeholder="Enter your message..."
-                />
-              </Form.Item>
-
-              <div className="flex w-full justify-center">
-                <Button className="text" type="primary" htmlType="submit">
-                  Send
-                </Button>
-              </div>
-            </Form>
+            <ContactForm />
           </div>
         </div>
       </div>
