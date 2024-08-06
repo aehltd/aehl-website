@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Checkbox, Input } from "antd";
+import { Form, Button, Checkbox, Input } from "antd";
 // import QModComponent from "../../components/QModWidget";
 // import QModFooter from "../../components/QModFooter";
 
@@ -13,60 +13,70 @@ const IREmailAlertsPage = () => {
         </div>
       </div>
       <div className="row">
-        {/* <QModComponent
-          tool={"iralertsmodule"}
-          params={JSON.stringify({ symbol: "AEHL" })}
-          datatracked
-        />
-        <QModFooter /> */}
         <h1>Subscribe to our Investor Email Alerts</h1>
         <p className="mb-4">
           If you are interested in working with AEHL and joining us in our
           exciting future, please fill in the information below.
         </p>
-        <div className="max-w-lg space-y-4">
+        <Form
+          layout="vertical"
+          name="subscribe"
+          method="POST"
+          data-netlify="true"
+          className="max-w-lg"
+        >
+          <input type="hidden" name="form-name" value="subscribe" />
+          <div className="flex space-x-4">
+            <Form.Item
+              label="First Name"
+              name="first-name"
+              className="smalltext"
+              style={{ flex: 1 }}
+            >
+              <Input name="first-name" placeholder="John" />
+            </Form.Item>
+            <Form.Item
+              label="Last Name"
+              name="last-name"
+              className="smalltext"
+              style={{ flex: 1 }}
+            >
+              <Input name="last-name" placeholder="Doe" />
+            </Form.Item>
+          </div>
+
+          <Form.Item label="Email Address" name="email" className="smalltext">
+            <Input placeholder="john.doe@gmail.com" />
+          </Form.Item>
+
           <div>
-            <div className="space-y-4">
-              <div className="flex space-x-4">
-                <div>
-                  <label className="smalltext">First Name</label>
-                  <Input placeholder="John" />
-                </div>
-                <div>
-                  <label className="smalltext">Last Name</label>
-                  <Input placeholder="Doe" />
-                </div>
-              </div>
-              <div>
-                <label className="smalltext">Email Address</label>
-                <Input placeholder="john.doe@gmail.com" />
-              </div>
-            </div>
+            <h3 className="mb-4">
+              Select the alerts that you would like to recieve:{" "}
+            </h3>
+            <Form.Item name="alerts" className="flex flex-col">
+              <Checkbox.Group>
+                <Checkbox value="select-all" className="text">
+                  Select All
+                </Checkbox>
+                <Checkbox value="news-releases" className="text">
+                  News Releases
+                </Checkbox>
+                <Checkbox value="events-presentations" className="text">
+                  Events and Presentations
+                </Checkbox>
+                <Checkbox value="sec-filings-reports" className="text">
+                  SEC Filings and Reports
+                </Checkbox>
+                <Checkbox value="stock-information" className="text">
+                  Stock Information
+                </Checkbox>
+              </Checkbox.Group>
+            </Form.Item>
           </div>
-          <div className="space-y-4">
-            <h3>Select the alerts that you would like to recieve: </h3>
-            <div className="flex flex-col">
-              <Checkbox className="text" onChange={() => {}}>
-                Select All
-              </Checkbox>
-              <Checkbox className="text" onChange={() => {}}>
-                News Releases
-              </Checkbox>
-              <Checkbox className="text" onChange={() => {}}>
-                Events and Presentations
-              </Checkbox>
-              <Checkbox className="text" onChange={() => {}}>
-                SEC Filings and Reports
-              </Checkbox>
-              <Checkbox className="text" onChange={() => {}}>
-                Stock Information
-              </Checkbox>
-            </div>
-          </div>
-          <Button className="text" type="primary">
+          <Button className="text" type="primary" htmlType="submit">
             Subscribe
           </Button>
-        </div>
+        </Form>
       </div>
       <div
         className="bg-local flex w-full justify-center"
@@ -76,17 +86,32 @@ const IREmailAlertsPage = () => {
           backgroundSize: "cover",
         }}
       >
-        <div className="row space-y-4">
+        <Form
+          layout="vertical"
+          name="unsubscribe"
+          method="POST"
+          data-netlify="true"
+          className="row"
+        >
+          <input type="hidden" name="form-name" value="unsubscribe" />
+
           <h1>Unsubscribe from Email Alerts</h1>
           <div className="max-w-lg">
-            <h2>Enter your email address below.</h2>
+            <h2 className="mb-4">Enter your email address below.</h2>
             <div>
-              <label>Email Address</label>
-              <Input placeholder="john.doe@gmail.com" />
+              <Form.Item
+                label="Email Address"
+                name="email"
+                className="smalltext"
+              >
+                <Input name="email" placeholder="john.doe@gmail.com" />
+              </Form.Item>
             </div>
           </div>
-          <Button type="primary">Unsubscribe</Button>
-        </div>
+          <Button className="text" type="primary" htmlType="submit">
+            Unsubscribe
+          </Button>
+        </Form>
       </div>
     </div>
   );

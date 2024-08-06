@@ -1,4 +1,4 @@
-import { Button, Input } from "antd";
+import { Button, Form, Input } from "antd";
 import React from "react";
 
 const ContactPage = () => {
@@ -68,46 +68,41 @@ const ContactPage = () => {
             form below.
           </p>
           <div className="p-4 max-w-lg border bg-white rounded-xl shadow-lg">
-            <form
-              name="contact-form"
+            <Form
+              layout="vertical"
+              name="contact"
               method="POST"
               data-netlify="true"
-              className="space-y-4"
             >
-              {/* Hidden input for Netlify */}
-              <input type="hidden" name="form-name" value="contact-form" />
+              <input type="hidden" name="form-name" value="contact" />
 
               <div className="flex space-x-4">
-                <div>
-                  <label htmlFor="first-name">First Name</label>
+                <Form.Item label="First Name" name="first-name" className="smalltext">
                   <Input name="first-name" placeholder="John" />
-                </div>
-                <div>
-                  <label htmlFor="last-name">Last Name</label>
+                </Form.Item>
+                <Form.Item label="Last Name" name="last-name" className="smalltext">
                   <Input name="last-name" placeholder="Doe" />
-                </div>
+                </Form.Item>
               </div>
 
-              <div>
-                <label htmlFor="email">Email Address</label>
+              <Form.Item label="Email Address" name="email" className="smalltext">
                 <Input name="email" placeholder="john.doe@gmail.com" />
-              </div>
+              </Form.Item>
 
-              <div>
-                <label htmlFor="message">Message</label>
+              <Form.Item label="Message" name="message" className="smalltext">
                 <Input.TextArea
                   name="message"
                   rows={4}
                   placeholder="Enter your message..."
                 />
-              </div>
+              </Form.Item>
 
               <div className="flex w-full justify-center">
-                <Button type="primary" htmlType="submit">
+                <Button className="text" type="primary" htmlType="submit">
                   Send
                 </Button>
               </div>
-            </form>
+            </Form>
           </div>
         </div>
       </div>
