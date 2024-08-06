@@ -1,6 +1,6 @@
 import React from "react";
 import { Form, Button, Checkbox, Input } from "antd";
-import { FormInstance } from "antd";
+// import { FormInstance } from "antd";
 // import QModComponent from "../../components/QModWidget";
 // import QModFooter from "../../components/QModFooter";
 
