@@ -181,8 +181,8 @@ export default function Home() {
               as cryptocurrency mining has led to a gap in the power supply and
               we believe that we can develop a cost-effective structure to
               bridge this gap. In terms of livestreaming ecommerce, Kylin Cloud
-              serves as a beacon of innovation. We're not just providing a
-              service, we're creating an environment where smaller influencers
+              serves as a beacon of innovation. We&apos;re not just providing a
+              service, we&apos;re creating an environment where smaller influencers
               and brands thrive, bringing a much needed democratization to this
               sphere. I am confident that we will redefine the landscape of both
               of these evolving landscapes thereby deliver significant value to
@@ -195,7 +195,7 @@ export default function Home() {
               alt="ceo"
               className="w-56 mb-8 object-cover rounded-md drop-shadow-md"
             />
-            <h2>Weilai "Will" Zhang</h2>
+            <h2>Weilai &quot;Will&quot; Zhang</h2>
             <p>AEHL Chairman and CEO</p>
           </div>
         </div>

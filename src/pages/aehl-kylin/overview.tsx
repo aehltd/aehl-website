@@ -117,7 +117,7 @@ export default function KylinOverview() {
             product promotion, customer acquisition, and sustained growth. With
             industry-leading solutions and a relentless pursuit of innovation,
             we enable our partners to navigate the livestreaming ecommerce world
-            with confidence and succeed in captivating today's digital-savvy
+            with confidence and succeed in captivating today&apos;s digital-savvy
             consumers.
           </p>
           <div className="ml-auto mt-4">

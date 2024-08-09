@@ -10,7 +10,7 @@ const items: CollapseProps['items'] = [
   {
     key: "2",
     label: "KylinCloud BBP Model",
-    children: <p>We believe we are the industry's first to introduce the KylinCloud BBP (Business-to-Business-to-Person) model, making it easier than ever for businesses to connect with the right talents and manage their ecommerce campaigns.</p>,
+    children: <p>We believe we are the industry&apos;s first to introduce the KylinCloud BBP (Business-to-Business-to-Person) model, making it easier than ever for businesses to connect with the right talents and manage their ecommerce campaigns.</p>,
   },
   {
     key: "3",
