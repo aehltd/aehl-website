@@ -1,6 +1,9 @@
+import withBundleAnalyzer from '@next/bundle-analyzer';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  output: 'export',
+  // reactStrictMode: true,
   transpilePackages: [
     // antd & deps
     "@ant-design",
@@ -40,5 +43,9 @@ const nextConfig = {
     "rc-util",
   ],
 };
+
+// export default withBundleAnalyzer({
+//   enabled: process.env.ANALYZE === 'true',
+// })(nextConfig);
 
 export default nextConfig;
