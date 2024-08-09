@@ -1,4 +1,4 @@
-// import ContactForm from "../components/ContactForm";
+import ContactForm from "@/components/forms/ContactForm";
 
 export default function ContactUs() {
   return (
@@ -67,7 +67,7 @@ export default function ContactUs() {
             form below.
           </p>
           <div className="p-4 max-w-lg border bg-white rounded-xl shadow-lg">
-            {/* <ContactForm /> */}
+            <ContactForm />
           </div>
         </div>
       </div>
