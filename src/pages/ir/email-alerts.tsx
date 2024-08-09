@@ -1,5 +1,5 @@
-// import SubscribeForm from "../../components/SubscribeForm";
-// import UnsubscribeForm from "../../components/UnsubscribeForm";
+import SubscribeForm from "@/components/forms/SubscribeForm";
+import UnsubscribeForm from "@/components/forms/UnsubscribeForm";
 
 export default function IREmailAlerts() {
   return (
@@ -15,7 +15,7 @@ export default function IREmailAlerts() {
           If you are interested in working with AEHL and joining us in our
           exciting future, please fill in the information below.
         </p>
-        {/* <SubscribeForm /> */}
+        <SubscribeForm />
       </div>
       <div
         className="bg-local flex w-full justify-center"
@@ -26,7 +26,7 @@ export default function IREmailAlerts() {
         }}
       >
         <div className="row">
-          {/* <UnsubscribeForm /> */}
+          <UnsubscribeForm />
         </div>
       </div>
     </div>
