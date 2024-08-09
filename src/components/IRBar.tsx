@@ -1,55 +1,74 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Menu, MenuProps } from "antd";
-import { useNavigate, useLocation } from "react-router-dom";
+import Link from "next/link";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
 const items: MenuItem[] = [
   {
-    label: "Overview",
-    key: "overview",
+    key: "/ir/overview",
+    label: <Link href="/ir/overview">Overview</Link>,
   },
   {
+    key: "/ir/news",
     label: "News and Events",
-    key: "news",
     children: [
       {
-        label: "Press Releases",
-        key: "press-releases",
+        key: "/ir/press-releases",
+        label: <Link href="/ir/press-releases">Press Releases</Link>,
       },
       {
-        label: "Events and Presentations",
-        key: "events-presentations",
+        key: "/ir/events-presentations",
+        label: (
+          <Link href="/ir/events-presentations">Events and Presentations</Link>
+        ),
       },
     ],
   },
   {
-    label: "SEC Filings",
-    key: "sec-filings",
+    key: "/ir/sec-filings",
+    label: <Link href="/ir/sec-filings">SEC Filings</Link>,
   },
   {
-    label: "Stock Information",
-    key: "stock-information",
+    key: "/ir/stock-information",
+    label: <Link href="/ir/stock-information">Stock Information</Link>,
   },
   {
+    key: "/ir/governance",
     label: "Corporate Governance",
-    key: "governance",
     children: [
-      { key: "board", label: "Board of Directors" },
-      { key: "committee-composition", label: "Committee Composition" },
-      { key: "diversity-matrix", label: "Diversity Matrix" },
-      { key: "documents", label: "Governance Documents" },
+      {
+        key: "/ir/board",
+        label: <Link href="/ir/board">Board of Directors</Link>,
+      },
+      {
+        key: "/ir/committee-composition",
+        label: (
+          <Link href="/ir/committee-composition">Committee Composition</Link>
+        ),
+      },
+      {
+        key: "/ir/diversity-matrix",
+        label: <Link href="/ir/diversity-matrix">Diversity Matrix</Link>,
+      },
+      {
+        key: "/ir/documents",
+        label: <Link href="/ir/documents">Governance Documents</Link>,
+      },
     ],
   },
   {
-    key: "contact",
+    key: "/ir/contact",
     label: "Contact Info",
     children: [
-      { key: "contact-ir", label: "Contact IR" },
-      { key: "faqs", label: "FAQs" },
       {
-        key: "email-alerts",
-        label: "Email Alerts",
+        key: "/ir/contact-ir",
+        label: <Link href="/ir/contact-ir">Contact IR</Link>,
+      },
+      { key: "/ir/faqs", label: <Link href="/ir/faqs">FAQs</Link> },
+      {
+        key: "/ir/email-alerts",
+        label: <Link href="/ir/email-alerts">Email Alerts</Link>,
       },
     ],
   },
@@ -58,31 +77,16 @@ const items: MenuItem[] = [
 const itemsInline: MenuItem[] = [
   {
     label: "View All Sections",
-    key: "ir-sections",
+    key: "/ir-sections",
     children: items,
   },
 ];
 
-// Get key from path /ir/${e.key}
-const useCurrentPage = () => {
-  const location = useLocation();
-  const key = location.pathname.split("/")[2];
-  return key;
-};
-
-const IRMenu = () => {
-  const currentPage = useCurrentPage();
-  const [current, setCurrent] = useState(
-    currentPage ? currentPage : "overview"
-  );
-  const [openKeys, setOpenKeys] = useState<string[]>([]); // State to manage open submenu keys
-  const navigate = useNavigate();
+export default function IRBar({current}: {current: string}) {
+  const [openKeys, setOpenKeys] = useState<string[]>([]);
 
   const handleClick = (e: any) => {
-    console.log("click ", e);
-    setCurrent(e.key);
     setOpenKeys([]);
-    navigate(`/ir/${e.key}`);
   };
 
   return (
@@ -113,5 +117,3 @@ const IRMenu = () => {
     </div>
   );
 };
-
-export default IRMenu;

@@ -77,11 +77,7 @@ const traditionalChain: Chain = {
   ],
 };
 
-interface ChainProps {
-  chain: Chain;
-}
-
-const InfrastructureChain: React.FC<ChainProps> = ({ chain }) => {
+export default function InfrastructureChain({ chain }: {chain: Chain})  {
   return (
     <div className="flex-grow bg-slate-400 rounded-lg p-2">
       <div className="flex items-center space-x-2">
@@ -121,4 +117,4 @@ const InfrastructureChain: React.FC<ChainProps> = ({ chain }) => {
   );
 };
 
-export { InfrastructureChain, endToEndChain, traditionalChain };
+export { endToEndChain, traditionalChain };

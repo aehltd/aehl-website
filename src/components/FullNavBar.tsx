@@ -1,22 +1,18 @@
-import React from "react";
-import { useLocation } from "react-router-dom";
+import { useRouter } from "next/router";
 import NavBar from "./NavBar";
-import IRMenu from "./IRBar";
+import IRBar from "./IRBar";
 
-const useIsIRPage = () => {
-  const location = useLocation();
-  return location.pathname.startsWith("/ir");
-};
+export default function FullNavBar() {
+  const router = useRouter();
+  const current = router.pathname;
+  const isIRSection = current.startsWith("/ir");
 
-const FullNavBar = () => {
-  const isIRPage = useIsIRPage();
-
+  console.log(current);
+  
   return (
     <nav>
-        <NavBar />
-        {isIRPage && <IRMenu />}
+      <NavBar current={current} isIRSection={isIRSection} />
+      {isIRSection && <IRBar current={current} />}
     </nav>
-  )
-};
-
-export default FullNavBar;
+  );
+}

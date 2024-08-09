@@ -1,86 +1,52 @@
-import React, { useState, useEffect, useLayoutEffect } from "react";
+import { useState } from "react";
 import { Menu, Drawer, MenuProps } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
-import { useNavigate, useLocation } from "react-router-dom";
+import Link from "next/link";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
 const items: MenuItem[] = [
-  { key: "", label: "Home" },
-  {
-    key: "aehl-us",
-    label: "AEHL US",
-    children: [
-      { key: "aehl-us/overview", label: "Overview" },
-      { key: "aehl-us/products", label: "Our Products" },
-      { key: "aehl-us/metrics", label: "Real Time Metrics" },
-    ],
-  },
-  {
-    key: "aehl-kylin",
-    label: "Kylin Cloud",
-    children: [
-      { key: "aehl-kylin/overview", label: "Overview" },
-      //{ key: "aehl-kylin/value", label: "Value Proposition" },
-      { key: "aehl-kylin/model", label: "Business Model" },
-    ],
-  },
-  {
-    key: "ir",
-    label: "Investor Relations",
-  },
-  { key: "contact-us", label: "Contact Us" },
-];
+    { key: "/", label: <Link href="/">Home</Link> },
+    {
+      key: "/aehl-us",
+      label: "AEHL US",
+      children: [
+        {
+          key: "/aehl-us/overview",
+          label: <Link href="/aehl-us/overview">Overview</Link>,
+        },
+        {
+          key: "/aehl-us/products",
+          label: <Link href="/aehl-us/products">Our Products</Link>,
+        },
+        // {
+        //   key: "/aehl-us/metrics",
+        //   label: <Link href="/aehl-us/metrics">Real Time Metrics</Link>,
+        // },
+      ],
+    },
+    {
+      key: "aehl-kylin",
+      label: "Kylin Cloud",
+      children: [
+        {
+          key: "/aehl-kylin/overview",
+          label: <Link href="/aehl-kylin/overview">Overview</Link>,
+        },
+        {
+          key: "/aehl-kylin/model",
+          label: <Link href="/aehl-kylin/model">Business Model</Link>,
+        },
+      ],
+    },
+    { key: "/ir", label: <Link href="/ir/overview">Investor Relations</Link> },
+    { key: "/contact-us", label: <Link href="/contact-us">Contact Us</Link> },
+  ];
 
-//Get key from url
-const useCurrentPage = () => {
-  const location = useLocation();
-  const key = location.pathname.split("/")[1];
-  console.log(key);
-  return key || "";
-};
-
-const NavBar = () => {
-  const currentPage = useCurrentPage();
+export default function NavBar({current, isIRSection}: {current: string, isIRSection: boolean}) {
   const [visible, setVisible] = useState(false);
-  const [current, setCurrent] = useState(currentPage ? currentPage : "");
-  const navigate = useNavigate();
-  const location = useLocation();
 
-  useEffect(() => {
-    setCurrent(currentPage);
-  }, [currentPage]);
-
-  useLayoutEffect(() => {
-    const scrollId = location.hash.replace("#", "");
-    if (scrollId) {
-      const element = document.getElementById(scrollId);
-      if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({ block: "start", behavior: "smooth" });
-        }, 500);
-      }
-    } else {
-      const element = document.getElementById("container");
-      if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({ block: "start", behavior: "smooth" });
-        }, 500);
-      }
-    }
-  }, [location]);
-
-  const handleClick = (e: any) => {
-    console.log("click ", e);
-    setCurrent(e.key);
-    setVisible(false);
-    const [path, hash] = e.key.split("#");
-    if (hash) {
-      navigate(`/${path}#${hash}`);
-    } else {
-      navigate(`/${e.key}`);
-    }
-  };
+  const currPage = isIRSection ? "/ir" : current;
 
   const openDrawer = () => {
     setVisible(true);
@@ -106,9 +72,8 @@ const NavBar = () => {
 
         <div className="hidden md:flex">
           <Menu
-            className="font-poppins h-full pt-2 min-w-0 flex-auto"
-            onClick={handleClick}
-            selectedKeys={[current]}
+            className="text-base font-poppins h-full pt-2 min-w-0 flex-auto"
+            selectedKeys={[currPage]}
             mode="horizontal"
             disabledOverflow
             items={items}
@@ -124,8 +89,7 @@ const NavBar = () => {
         >
           <Menu
             className="font-poppins !border-0"
-            onClick={handleClick}
-            selectedKeys={[current]}
+            selectedKeys={[currPage]}
             mode="inline"
             items={items}
           />
@@ -134,5 +98,3 @@ const NavBar = () => {
     </div>
   );
 };
-
-export default NavBar;

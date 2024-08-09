@@ -1,17 +1,10 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
 import { Button } from "antd";
+import { useRouter } from "next/router";
+import Image from "next/image";
+import Link from "next/link";
 
-const HomePage = () => {
-  const navigate = useNavigate();
-
-  const handleNavToUS = () => {
-    navigate("/aehl-us/overview");
-  };
-
-  const handleNavToKylin = () => {
-    navigate("/aehl-kylin/overview");
-  };
+export default function Home() {
+  const router = useRouter();
 
   return (
     <div id="container" className="container">
@@ -71,13 +64,11 @@ const HomePage = () => {
                       and cryptocurrency sectors.
                     </p>
                     <div className="mr-auto mt-4">
-                      <Button
-                        type="primary"
-                        size="large"
-                        onClick={handleNavToUS}
-                      >
-                        Learn More
-                      </Button>
+                      <Link href="/aehl-us/overview" passHref>
+                        <Button type="primary" size="middle">
+                          Learn More
+                        </Button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -107,9 +98,11 @@ const HomePage = () => {
                 cryptocurrency sectors.
               </p>
               <div className="mr-auto mt-4">
-                <Button type="primary" size="large" onClick={handleNavToUS}>
-                  Learn More
-                </Button>
+                <Link href="/aehl-us/overview" passHref>
+                  <Button type="primary" size="middle">
+                    Learn More
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -136,13 +129,11 @@ const HomePage = () => {
                     revolution.
                   </p>
                   <div className="ml-auto mt-4">
-                    <Button
-                      type="primary"
-                      size="large"
-                      onClick={handleNavToKylin}
-                    >
-                      Learn More
-                    </Button>
+                    <Link href="/aehl-kylin/overview" passHref>
+                      <Button type="primary" size="middle">
+                        Learn More
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -164,9 +155,14 @@ const HomePage = () => {
                 volume, we are at the very forefront of this revolution.
               </p>
               <div className="ml-auto mt-4">
-                <Button type="primary" size="large" onClick={handleNavToKylin}>
-                  Learn More
-                </Button>
+                <Link href="/aehl-kylin/overview" passHref>
+                  <Button
+                    type="primary"
+                    size="middle"
+                  >
+                    Learn More
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -206,6 +202,4 @@ const HomePage = () => {
       </div>
     </div>
   );
-};
-
-export default HomePage;
+}

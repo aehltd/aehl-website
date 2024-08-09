@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
-const QModFooter = () => {
+export default function QModFooter() {
   useEffect(() => {
     const script = document.createElement("script");
     script.id = "qmod";
@@ -55,6 +55,4 @@ const QModFooter = () => {
       </div>
     </div>
   );
-};
-
-export default QModFooter;
+}
