@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { Avatar, Card } from "antd";
 import Link from "next/link";
-import {Typography } from "antd";
+import { Typography } from "antd";
+import { Button } from 'antd';
+
 
 const { Paragraph, Text } = Typography;
 const { Meta } = Card;
+const AtmInfoLink = "/aehl-us/ATM-info"
 
 type BoardEntry = {
   name: string;
@@ -178,6 +181,8 @@ const board: BoardEntry[] = [
   },
 ];
 
+
+
 export default function ATM() {
   return (
     <div>
@@ -188,14 +193,16 @@ export default function ATM() {
               <Card
                 hoverable
                 bordered={true}
-                className={`shadow-xl ${
+                className={`shadow-xl hover:drop-shadow-2xl ${
                   entry.state ? "opacity-100" : "opacity-30"
                 }`}
                 actions={[
                   entry.state ? (
-                    <p className="uppercase">Buy Now</p>
+                    <Link href={AtmInfoLink} passHref>
+                      <p className="uppercase hover:text-darkBlue">Buy Now</p>
+                    </Link>
                   ) : (
-                    <p className="uppercase">Sold Out</p>
+                    <p className="uppercase line-through">Sold Out</p>
                   ), // Conditional action
                 ]}
               >
@@ -204,7 +211,7 @@ export default function ATM() {
                   title={
                     <div className="flex">
                       <h1 className="text-start text-2xl tracking-wide">
-                        {entry.name} #{index+1}
+                        {entry.name} #{index + 1}
                       </h1>
                     </div>
                   }
