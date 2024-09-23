@@ -54,11 +54,6 @@ export default function ContactUs() {
                 <p>Monday – Friday</p>
                 <p>10am – 5pm</p>
               </div>
-              {/* <div>
-                <h2>Investor Relations</h2>
-                <p>+1 (646) 694 - 8538</p>
-                <p>ir@aehltd.com</p>
-              </div> */}
               <div className="w-full h-[30vh] my-5">
                 <iframe
                   title="AEHL Location"

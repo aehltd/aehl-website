@@ -9,7 +9,7 @@ const { Paragraph, Text } = Typography;
 const { Meta } = Card;
 const AtmInfoLink = "/aehl-us/ATM-info"
 
-type BoardEntry = {
+type BondEntry = {
   name: string;
   price: number;
   interest: number;
@@ -18,9 +18,9 @@ type BoardEntry = {
   state: boolean;
 };
 
-const board: BoardEntry[] = [
+const bonds: BondEntry[] = [
   {
-    name: "AETB Bond",
+    name: "ATM Bond",
     price: 50000,
     interest: 12,
     RoR: 12,
@@ -28,7 +28,7 @@ const board: BoardEntry[] = [
     state: true,
   },
   {
-    name: "AETB Bond",
+    name: "ATM Bond",
     price: 50000,
     interest: 12,
     RoR: 12,
@@ -36,7 +36,7 @@ const board: BoardEntry[] = [
     state: false,
   },
   {
-    name: "AETB Bond",
+    name: "ATM Bond",
     price: 50000,
     interest: 12,
     RoR: 12,
@@ -44,7 +44,7 @@ const board: BoardEntry[] = [
     state: true,
   },
   {
-    name: "AETB Bond",
+    name: "ATM Bond",
     price: 50000,
     interest: 12,
     RoR: 12,
@@ -52,7 +52,7 @@ const board: BoardEntry[] = [
     state: false,
   },
   {
-    name: "AETB Bond",
+    name: "ATM Bond",
     price: 50000,
     interest: 12,
     RoR: 12,
@@ -60,7 +60,7 @@ const board: BoardEntry[] = [
     state: false,
   },
   {
-    name: "AETB Bond",
+    name: "ATM Bond",
     price: 50000,
     interest: 12,
     RoR: 12,
@@ -68,7 +68,7 @@ const board: BoardEntry[] = [
     state: true,
   },
   {
-    name: "AETB Bond",
+    name: "ATM Bond",
     price: 50000,
     interest: 12,
     RoR: 12,
@@ -76,7 +76,7 @@ const board: BoardEntry[] = [
     state: true,
   },
   {
-    name: "AETB Bond",
+    name: "ATM Bond",
     price: 50000,
     interest: 12,
     RoR: 12,
@@ -84,7 +84,7 @@ const board: BoardEntry[] = [
     state: true,
   },
   {
-    name: "AETB Bond",
+    name: "ATM Bond",
     price: 50000,
     interest: 12,
     RoR: 12,
@@ -92,7 +92,7 @@ const board: BoardEntry[] = [
     state: false,
   },
   {
-    name: "AETB Bond",
+    name: "ATM Bond",
     price: 50000,
     interest: 12,
     RoR: 12,
@@ -100,7 +100,7 @@ const board: BoardEntry[] = [
     state: true,
   },
   {
-    name: "AETB Bond",
+    name: "ATM Bond",
     price: 50000,
     interest: 12,
     RoR: 12,
@@ -108,7 +108,7 @@ const board: BoardEntry[] = [
     state: true,
   },
   {
-    name: "AETB Bond",
+    name: "ATM Bond",
     price: 50000,
     interest: 12,
     RoR: 12,
@@ -116,7 +116,7 @@ const board: BoardEntry[] = [
     state: true,
   },
   {
-    name: "AETB Bond",
+    name: "ATM Bond",
     price: 50000,
     interest: 12,
     RoR: 12,
@@ -124,7 +124,7 @@ const board: BoardEntry[] = [
     state: false,
   },
   {
-    name: "AETB Bond",
+    name: "ATM Bond",
     price: 50000,
     interest: 12,
     RoR: 12,
@@ -132,7 +132,7 @@ const board: BoardEntry[] = [
     state: true,
   },
   {
-    name: "AETB Bond",
+    name: "ATM Bond",
     price: 50000,
     interest: 12,
     RoR: 12,
@@ -140,7 +140,7 @@ const board: BoardEntry[] = [
     state: true,
   },
   {
-    name: "AETB Bond",
+    name: "ATM Bond",
     price: 50000,
     interest: 12,
     RoR: 12,
@@ -148,7 +148,7 @@ const board: BoardEntry[] = [
     state: true,
   },
   {
-    name: "AETB Bond",
+    name: "ATM Bond",
     price: 50000,
     interest: 12,
     RoR: 12,
@@ -156,7 +156,7 @@ const board: BoardEntry[] = [
     state: true,
   },
   {
-    name: "AETB Bond",
+    name: "ATM Bond",
     price: 50000,
     interest: 12,
     RoR: 12,
@@ -164,7 +164,7 @@ const board: BoardEntry[] = [
     state: false,
   },
   {
-    name: "AETB Bond",
+    name: "ATM Bond",
     price: 50000,
     interest: 12,
     RoR: 12,
@@ -172,7 +172,7 @@ const board: BoardEntry[] = [
     state: true,
   },
   {
-    name: "AETB Bond",
+    name: "ATM Bond",
     price: 50000,
     interest: 12,
     RoR: 12,
@@ -187,14 +187,14 @@ export default function ATM() {
   return (
     <div>
       <div className="grid md:grid-cols-4 grid-cols-2 gap-6">
-        {board.map((entry, index) => {
+        {bonds.map((entry, index) => {
           return (
             <div key={index}>
               <Card
-                hoverable
+                hoverable = {entry.state}
                 bordered={true}
-                className={`shadow-xl hover:drop-shadow-2xl ${
-                  entry.state ? "opacity-100" : "opacity-30"
+                className={`shadow-xl ${
+                  entry.state ? "opacity-100 hover:drop-shadow-2xl" : "opacity-30"
                 }`}
                 actions={[
                   entry.state ? (
@@ -210,8 +210,8 @@ export default function ATM() {
                   className="items-center"
                   title={
                     <div className="flex">
-                      <h1 className="text-start text-2xl tracking-wide">
-                        {entry.name} #{index + 1}
+                      <h1 className="text-start text-2xl tracking-wide flex items-end">
+                        {entry.name} <span className="p-1 text-base"> # {index + 1}</span>
                       </h1>
                     </div>
                   }

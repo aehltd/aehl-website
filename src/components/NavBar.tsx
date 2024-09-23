@@ -16,6 +16,10 @@ const items: MenuItem[] = [
         label: <Link href="/aehl-us/corporate-overview">Overview</Link>,
       },
       {
+        key: "/aehl-us/ATM",
+        label: <Link href="/aehl-us/ATM">Electricity Bond</Link>,
+      },
+      {
         key: "/aehl-us/products",
         label: <Link href="/aehl-us/products">Our Products</Link>,
       },
