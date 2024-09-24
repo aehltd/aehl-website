@@ -30,6 +30,8 @@ const config: Config = {
       'midnight2': '#606470',
       'green': '#50D890',
       'sky': '#93DEFF',
+      "ahel-red": '#F5004F',
+      "darkBlue": '#4F98CA',
       gray: {
           50: '#f9fafb',
           100: '#f3f4f6',
