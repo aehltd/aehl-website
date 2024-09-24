@@ -62,7 +62,7 @@ export default function Home() {
                       and cryptocurrency sectors.
                     </p>
                     <div className="mr-auto mt-4">
-                      <Link href="/aehl-us/overview" passHref>
+                      <Link href="/aehl-us/corporate-overview" passHref>
                         <Button
                           type="primary"
                           size="middle"
@@ -100,7 +100,7 @@ export default function Home() {
                 cryptocurrency sectors.
               </p>
               <div className="mr-auto mt-4">
-                <Link href="/aehl-us/overview" passHref>
+                <Link href="/aehl-us/corporate-overview" passHref>
                   <Button
                     type="primary"
                     size="middle"
@@ -135,7 +135,7 @@ export default function Home() {
                     revolution.
                   </p>
                   <div className="ml-auto mt-4">
-                    <Link href="/aehl-kylin/overview" passHref>
+                    <Link href="/aehl-kylin/business-overview" passHref>
                       <Button
                         type="primary"
                         size="middle"
@@ -165,7 +165,7 @@ export default function Home() {
                 volume, we are at the very forefront of this revolution.
               </p>
               <div className="ml-auto mt-4">
-                <Link href="/aehl-kylin/overview" passHref>
+                <Link href="/aehl-kylin/business-overview" passHref>
                   <Button
                     type="primary"
                     size="middle"

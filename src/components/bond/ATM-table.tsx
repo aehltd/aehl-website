@@ -186,7 +186,7 @@ const bonds: BondEntry[] = [
 export default function ATM() {
   return (
     <div>
-      <div className="grid md:grid-cols-4 grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-4 grid-cols-1 gap-6">
         {bonds.map((entry, index) => {
           return (
             <div key={index}>

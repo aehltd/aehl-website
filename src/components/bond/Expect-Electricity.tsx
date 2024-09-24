@@ -23,6 +23,12 @@ export default function expectElectricity() {
             subTitle: "By 2025",
             icon: <LineChartOutlined />,
           },
+          {
+            title: "Waiting",
+            description: "500 MW",
+            subTitle: "By 2026",
+            icon: <LineChartOutlined />,
+          },
         ]}
       />
     </div>
