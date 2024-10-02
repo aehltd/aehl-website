@@ -219,7 +219,6 @@ export default function ATM() {
                     <div className="flex-col">
                       <p className="text-start text-base tracking-widest font-bold py-2">
                         ${new Intl.NumberFormat().format(entry.price)}
-                        {/* console.log(new Intl.NumberFormat().format(number)); */}
                       </p>
                       <p className="text-start text-base tracking-normal">
                         Annual Interest Rate:{" "}

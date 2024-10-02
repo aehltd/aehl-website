@@ -22,7 +22,7 @@ const bondType: BondType[] = [
     name: "ATM No. 1",
     investAmount: "50000",
     interest: 12,
-    paid: "Paid by Monthly",
+    paid: "Monthly Paydown Plan",
     investReturn: 6.5,
     state: false,
     image:
@@ -42,7 +42,7 @@ const bondType: BondType[] = [
     name: "ATM No. 3",
     investAmount: "50000",
     interest: 12,
-    paid: "Paid by Annually",
+    paid: "Interest-Only Plan",
     investReturn: 12,
     state: false,
     image:
@@ -127,8 +127,8 @@ export default function USOverview() {
                             {entry.interest}%
                           </span>
                         </p>
-                        <p className="text-start text-xs tracking-normal pt-2">
-                          Investment Period: 12 Month
+                        <p className="text-start text-xs tracking-normal pt-2 capitalize">
+                          Investment Period: up to 36 Month
                         </p>
                       </div>
                     }
@@ -138,7 +138,7 @@ export default function USOverview() {
             );
           })}
         </div>
-        <div className="md:col-span-4">
+        <div className="md:col-span-5">
           <Checkout index={selectedIndex} />
         </div>
         <div className="md:col-span-2 md:col-start-4 md:text-end text-center">
