@@ -35,7 +35,7 @@ export default function USOverview() {
           <span className="font-bold underline tracking-wide">$50,000</span>
         </h3>
         <h3 className="md:text-2xl text-lg">
-          Annual Inteerest Rate:{" "}
+          Annual Interest Rate:{" "}
           <span className="font-bold underline tracking-wide">12%</span>
         </h3>
         <h3 className="md:text-2xl text-lg">

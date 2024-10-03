@@ -10,19 +10,6 @@ export default function Checkout({ index }: { index: number }) {
   const [quantity, setQuantity] = useState(1);
   const [term, setTerm] = useState(1);
 
-  const getInvestmentReturnRate = (index: number) => {
-    switch (index) {
-      case 0:
-        return 0.065; // 5% return for index 1
-      case 1:
-        return 0.095; // 7% return for index 2
-      case 2:
-        return 0.12; // 10% return for index 3
-      default:
-        return 0;
-    }
-  };
-
   const getAnnualInterestRate = (index: number) => {
     switch (index) {
       case 0:
@@ -36,61 +23,181 @@ export default function Checkout({ index }: { index: number }) {
     }
   };
 
-  const getATM1 = (index: number, rate:number) => {
-    const m = index * 12
-    let sum = 0
-    let curSum = investmentAmount
-    let monthlyReturn = curSum*(rate/12)
-    let temp = 0
-    for (let i = 1; i <= m; i++) {
-      temp = curSum/m
-      sum += temp + monthlyReturn
-      curSum -= monthlyReturn
-    }
-    return sum
-  }
+  const getATM1 = (term: number, rate: number) => {
+    const months = term * 12; // Total months
+    let remainingPrincipal = investmentAmount; // Starting principal
+    let totalPaid = 0; // Total amount paid over the term
 
-  const getAnnualReturnRate = (index: number) => {
-    switch (index) {
-      case 0:
-        // return getATM1(index);
-      case 1:
-        return investmentAmount * 0.01 + investmentAmount / 6; // 7% return for index 2
-      case 2:
-        return investmentAmount * 0.01; // 10% return for index 3
-      default:
-        return 0;
+    const monthlyRate = rate / 12; // Monthly interest rate
+
+    const monthlyPayment = remainingPrincipal / months;
+
+    for (let i = 1; i <= months; i++) {
+      totalPaid += remainingPrincipal * monthlyRate + monthlyPayment;
+      remainingPrincipal -= monthlyPayment;
     }
+    return totalPaid;
   };
 
-  const investmentReturnRate = 1 + getInvestmentReturnRate(index);
+  const getATM2 = (term: number, rate: number) => {
+    const months = term * 12; // Total months
+    const hMonths = months / 2;
+    let remainingPrincipal = investmentAmount; // Starting principal
+    let totalPaid = 0; // Total amount paid over the term
+
+    const monthlyRate = rate / 12; // Monthly interest rate
+    const monthlyPayment = remainingPrincipal / hMonths;
+    const fixMonthlyPayment = remainingPrincipal * monthlyRate;
+
+    for (let i = 1; i <= hMonths; i++) {
+      totalPaid += fixMonthlyPayment;
+    }
+    for (let i = 1; i <= hMonths; i++) {
+      totalPaid += remainingPrincipal * monthlyRate + monthlyPayment;
+      remainingPrincipal -= monthlyPayment;
+    }
+    return totalPaid;
+  };
+
+  const getATM3 = (term: number, rate: number) => {
+    const months = term * 12; // Total months
+    let remainingPrincipal = investmentAmount; // Starting principal
+    let totalPaid = 0; // Total amount paid over the term
+
+    const monthlyRate = rate / 12; // Monthly interest rate
+    const fixMonthlyPayment = remainingPrincipal * monthlyRate;
+
+    for (let i = 1; i <= months; i++) {
+      totalPaid += fixMonthlyPayment;
+    }
+    return totalPaid + remainingPrincipal;
+  };
+
   const investmentAmount = 50000 * quantity;
 
   const dataSource = [
     {
       key: "1",
-      bond: <span className="font-bold" style={{ color: index === 0 ? "red" : "inherit" }}>ATM Bond #1</span>,
-      term: <>{term} Year</>,
-      amount: <>${new Intl.NumberFormat().format(investmentAmount)}</>,
-      interest: <>{getAnnualInterestRate(term-1)*100}%</>,
-      iReturnR: <>${new Intl.NumberFormat().format(getATM1(term, getAnnualInterestRate(term-1))/investmentAmount)}</>,
-      iReturn: <>${new Intl.NumberFormat().format(getATM1(term, getAnnualInterestRate(term-1)))}</>,
+      bond: (
+        <span className={` ${index === 0 ? "font-bold text-darkBlue " : ""}`}>
+          ATM Bond #1
+        </span>
+      ),
+      term: (
+        <span className={` ${index === 0 ? "font-bold text-darkBlue " : ""}`}>
+          {term} Year
+        </span>
+      ),
+      amount: (
+        <span className={` ${index === 0 ? "font-bold text-darkBlue " : ""}`}>
+          ${new Intl.NumberFormat().format(investmentAmount)}
+        </span>
+      ),
+      interest: (
+        <span className={` ${index === 0 ? "font-bold text-darkBlue " : ""}`}>
+          {getAnnualInterestRate(term - 1) * 100}%
+        </span>
+      ),
+      iReturnR: (
+        <span className={` ${index === 0 ? "font-bold text-darkBlue " : ""}`}>
+          {new Intl.NumberFormat().format(
+            (getATM1(term, getAnnualInterestRate(term - 1)) / investmentAmount -
+              1) *
+              100
+          )}
+          %
+        </span>
+      ),
+      iReturn: (
+        <span className={` ${index === 0 ? "font-bold text-darkBlue " : ""}`}>
+          $
+          {new Intl.NumberFormat().format(
+            getATM1(term, getAnnualInterestRate(term - 1))
+          )}
+        </span>
+      ),
     },
     {
-      key: "1",
-      bond: <span className="font-bold" style={{ color: index === 1 ? "red" : "inherit" }}>ATM Bond #2</span>,
-      term: <>{term} Year</>,
-      amount: <>${new Intl.NumberFormat().format(investmentAmount)}</>,
-      interest: <>{getAnnualInterestRate(term-1)*100}%</>,
-      // iReturn: <>${new Intl.NumberFormat().format(investmentAmount*(getAnnualInterestRate(term-1)+1))}</>,
+      key: "2",
+      bond: (
+        <span className={` ${index === 1 ? "font-bold text-darkBlue " : ""}`}>
+          ATM Bond #2
+        </span>
+      ),
+      term: (
+        <span className={` ${index === 1 ? "font-bold text-darkBlue " : ""}`}>
+          {term} Year
+        </span>
+      ),
+      amount: (
+        <span className={` ${index === 1 ? "font-bold text-darkBlue " : ""}`}>
+          ${new Intl.NumberFormat().format(investmentAmount)}
+        </span>
+      ),
+      interest: (
+        <span className={` ${index === 1 ? "font-bold text-darkBlue " : ""}`}>
+          {getAnnualInterestRate(term - 1) * 100}%
+        </span>
+      ),
+      iReturnR: (
+        <span className={` ${index === 1 ? "font-bold text-darkBlue " : ""}`}>
+          {new Intl.NumberFormat().format(
+            (getATM2(term, getAnnualInterestRate(term - 1)) / investmentAmount -
+              1) *
+              100
+          )}
+          %
+        </span>
+      ),
+      iReturn: (
+        <span className={` ${index === 1 ? "font-bold text-darkBlue " : ""}`}>
+          $
+          {new Intl.NumberFormat().format(
+            getATM2(term, getAnnualInterestRate(term - 1))
+          )}
+        </span>
+      ),
     },
     {
-      key: "1",
-      bond: <span className="font-bold" style={{ color: index === 2 ? "red" : "inherit" }}>ATM Bond #3</span>,
-      term: <>{term} Year</>,
-      amount: <>${new Intl.NumberFormat().format(investmentAmount)}</>,
-      interest: <>{getAnnualInterestRate(term-1)*100}%</>,
-      // iReturn: <>${new Intl.NumberFormat().format(investmentAmount*(getAnnualInterestRate(term-1)+1))}</>,
+      key: "3",
+      bond: (
+        <span className={` ${index === 2 ? "font-bold text-darkBlue " : ""}`}>
+          ATM Bond #3
+        </span>
+      ),
+      term: (
+        <span className={` ${index === 2 ? "font-bold text-darkBlue " : ""}`}>
+          {term} Year
+        </span>
+      ),
+      amount: (
+        <span className={` ${index === 2 ? "font-bold text-darkBlue " : ""}`}>
+          ${new Intl.NumberFormat().format(investmentAmount)}
+        </span>
+      ),
+      interest: (
+        <span className={` ${index === 2 ? "font-bold text-darkBlue " : ""}`}>
+          {getAnnualInterestRate(term - 1) * 100}%
+        </span>
+      ),
+      iReturnR: (
+        <span className={` ${index === 2 ? "font-bold text-darkBlue " : ""}`}>
+          {new Intl.NumberFormat().format(
+            (getATM3(term, getAnnualInterestRate(term - 1)) / investmentAmount -
+              1) *
+              100
+          )}
+          %
+        </span>
+      ),
+      iReturn: (
+        <span className={` ${index === 2 ? "font-bold text-darkBlue " : ""}`}>
+          $
+          {new Intl.NumberFormat().format(
+            getATM3(term, getAnnualInterestRate(term - 1))
+          )}
+        </span>
+      ),
     },
   ];
 
@@ -116,7 +223,7 @@ export default function Checkout({ index }: { index: number }) {
       key: "interest",
     },
     {
-      title: "Investment Return Rate",
+      title: "Total Investment Return Rate",
       dataIndex: "iReturnR",
       key: "iReturnR",
     },
@@ -156,55 +263,7 @@ export default function Checkout({ index }: { index: number }) {
 
   return (
     <div className="grid grid-cols-4 gap-4">
-      {/* <div>
-        <h2 className="md:hidden md:text-xl text-xl font-bold py-1 tracking-wider underline">
-          ATM Bond #{index + 1}
-        </h2>
-      </div>
-      <div>
-        <h2 className="md:text-xl text-lg py-1">
-          Investment amount:{" "}
-          <span className="text-darkBlue">${investmentAmount}</span>
-        </h2>
-      </div>
-
-      {index === 0 && (
-        <div>
-          <h2 className="md:text-xl text-lg py-1 capitalize">
-            Pay by Monthly:{" "}
-            <span className="text-darkBlue">Up to ${investmentMonthly}</span>
-          </h2>
-        </div>
-      )}
-
-      {index === 1 && (
-        <div className="">
-          <h2 className="md:text-xl text-lg py-1 capitalize">
-            first six month:{" "}
-            <span className="text-darkBlue">${investmentFixMonthly}</span>
-          </h2>
-          <h2 className="md:text-xl text-lg py-1 capitalize">
-            start in the seventh:{" "}
-            <span className="text-darkBlue">Up to ${investmentMonthly}</span>
-          </h2>
-        </div>
-      )}
-      {index === 2 && (
-        <div>
-          <h2 className="md:text-xl text-lg py-1 capitalize">
-            Pay by Monthly:{" "}
-            <span className="text-darkBlue">${investmentFixMonthly}</span>
-          </h2>
-        </div>
-      )} */}
-
-      {/* <div>
-        <h2 className="md:text-xl text-lg py-1">
-          Total Principal and Interest:{" "}
-          <span className="text-darkBlue">${investmentReturn}</span>
-        </h2>
-      </div> */}
-      <div className="col-span-3 px-3 w-full">
+      <div className="col-span-4 w-full py-3">
         <p className="font-bold text-xl">Choose Your Investment Term:</p>
         <div className="">
           <Slider
@@ -218,20 +277,30 @@ export default function Checkout({ index }: { index: number }) {
         </div>
         <div className="flex justify-between">
           <p className="text-start text-sm capitalize">
-            1 Year <br /> (up to {getAnnualInterestRate(0)*100}% Interest Rate)
+            1 Year <br /> ({getAnnualInterestRate(0) * 100}% Interest Rate)
           </p>
           <p className="text-sm capitalize text-center">
-            2 Year <br /> (up to {getAnnualInterestRate(1)*100}% Interest Rate)
+            2 Year <br /> ({getAnnualInterestRate(1) * 100}% Interest Rate)
           </p>
           <p className="text-end text-sm font-bold capitalize">
-            3 Year <br /> (up to <span className="text-green">{getAnnualInterestRate(2)*100}%</span>{" "}
+            3 Year <br /> ({" "}
+            <span className="text-green">
+              {getAnnualInterestRate(2) * 100}%
+            </span>{" "}
             Interest Rate)
           </p>
         </div>
       </div>
-      <div className="py-1 col-span-1">
-        <p className="font-bold text-xl">Quantity:</p>
-        <div className="flex">
+      <div className="col-span-4 py-3">
+        <p className="font-bold text-xl">Revenue Forecast:</p>
+        <Table dataSource={dataSource} columns={columns} pagination={false} />
+      </div>
+      <div className="py-1 md:col-start-3 col-span-1 justify-end">
+        <p className="font-bold text-xl text-center">Principal: ${new Intl.NumberFormat().format(investmentAmount)}</p>
+      </div>
+      <div className="py-1 col-span-1 justify-end">
+        <p className="font-bold text-xl text-center">Quantity:</p>
+        <div className="justify-end flex">
           <Button type="text" onClick={handleDecrement}>
             <MinusOutlined />
           </Button>
@@ -249,9 +318,6 @@ export default function Checkout({ index }: { index: number }) {
             <PlusOutlined />
           </Button>
         </div>
-      </div>
-      <div className="col-span-4">
-        <Table dataSource={dataSource} columns={columns} pagination={false}/>
       </div>
     </div>
   );
