@@ -206,31 +206,38 @@ export default function Checkout({ index }: { index: number }) {
       title: "Bond Name",
       dataIndex: "bond",
       key: "bond",
+      fixed: "left",
+      width: 100,
     },
     {
       title: "Term",
       dataIndex: "term",
       key: "term",
+      width: 100,
     },
     {
       title: "Principal",
       dataIndex: "amount",
       key: "amount",
+      width: 100,
     },
     {
       title: "Annual Interest",
       dataIndex: "interest",
       key: "interest",
+      width: 100,
     },
     {
       title: "Total Investment Return Rate",
       dataIndex: "iReturnR",
       key: "iReturnR",
+      width: 250,
     },
     {
       title: "Total Principal and Interest:",
       dataIndex: "iReturn",
       key: "iReturn",
+      width: 220,
     },
   ];
 
@@ -262,8 +269,8 @@ export default function Checkout({ index }: { index: number }) {
   };
 
   return (
-    <div className="grid grid-cols-4 gap-4">
-      <div className="col-span-4 w-full py-3">
+    <div className="grid grid-cols-2 gap-4">
+      <div className="col-span-2 w-full py-3">
         <p className="font-bold text-xl">Choose Your Investment Term:</p>
         <div className="">
           <Slider
@@ -291,32 +298,41 @@ export default function Checkout({ index }: { index: number }) {
           </p>
         </div>
       </div>
-      <div className="col-span-4 py-3">
+      <div className="col-span-2 py-3">
         <p className="font-bold text-xl">Revenue Forecast:</p>
-        <Table dataSource={dataSource} columns={columns} pagination={false} />
-      </div>
-      <div className="py-1 md:col-start-3 col-span-1 justify-end">
-        <p className="font-bold text-xl text-center">Principal: ${new Intl.NumberFormat().format(investmentAmount)}</p>
+        <Table
+          dataSource={dataSource}
+          columns={columns}
+          pagination={false}
+          scroll={{ x: "max-content", y: 55 * 5 }}
+        />
       </div>
       <div className="py-1 col-span-1 justify-end">
-        <p className="font-bold text-xl text-center">Quantity:</p>
-        <div className="justify-end flex">
-          <Button type="text" onClick={handleDecrement}>
-            <MinusOutlined />
-          </Button>
-          <div>
-            <InputNumber
-              size="large"
-              min={1}
-              max={100000}
-              defaultValue={1}
-              value={quantity}
-              onChange={handleQuantityChange}
-            />
+        <p className="font-bold text-xl text-end">
+          Principal: ${new Intl.NumberFormat().format(investmentAmount)}
+        </p>
+      </div>
+      <div className="py-1 col-span-1">
+        <div className="justify-end flex flex-col">
+          <p className="font-bold text-xl text-center">Quantity:</p>
+          <div className="flex">
+            <Button type="text" onClick={handleDecrement}>
+              <MinusOutlined />
+            </Button>
+            <div>
+              <InputNumber
+                size="large"
+                min={1}
+                max={100000}
+                defaultValue={1}
+                value={quantity}
+                onChange={handleQuantityChange}
+              />
+            </div>
+            <Button type="text" onClick={handleIncrement}>
+              <PlusOutlined />
+            </Button>
           </div>
-          <Button type="text" onClick={handleIncrement}>
-            <PlusOutlined />
-          </Button>
         </div>
       </div>
     </div>

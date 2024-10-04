@@ -63,7 +63,7 @@ export default function USOverview() {
   };
 
   return (
-    <div id="container" className="container p-5">
+    <div id="container" className="container md:p-16 p-3">
       <h1 className="py-3 font-bold text-start md:text-4xl text-2xl">
         ATM: Antelope Texas Machine Bond
       </h1>
@@ -72,8 +72,8 @@ export default function USOverview() {
         stable returns while supporting the growth and stability of
         Texas&rsquo;s electricity infrastructure.
       </p>
-      <div className="grid md:grid-cols-5 grid-cols-1 gap-6 py-5">
-        <div className="grid col-span-5 grid-cols-3 gap-6 py-5">
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-2 py-5">
+        <div className="grid col-span-3 md:grid-cols-3 grid-cols-1 md:gap-6 gap-1 py-5">
           {bondType.map((entry, index) => {
             return (
               <div key={index} className="py-4 ">
@@ -119,13 +119,13 @@ export default function USOverview() {
             );
           })}
         </div>
-        <div className="col-span-5">
+        <div className="col-span-3">
           <Checkout index={selectedIndex} />
         </div>
-        <div className="md:col-span-2 md:col-start-4 md:text-end text-center">
+        <div className="col-span-3 md:text-end text-center">
           <p>If you are interested in this product, please contact us.</p>
         </div>
-        <div className="md:col-start-5 pb-10">
+        <div className="md:col-span-1 col-span-3 md:col-start-3 pb-10">
           <Link href="/contact-us" passHref>
             <Button type="primary" className="w-full" size="large">
               <ContactsOutlined /> Contact Us
@@ -133,7 +133,7 @@ export default function USOverview() {
           </Link>
         </div>
 
-        <div className="col-span-5">
+        <div className="col-span-3 justify-center">
           <p>
             <span className="text-2xl text-black font-bold tracking-wide"> Example Investment Breakdown:</span>
             <br />
@@ -146,7 +146,7 @@ export default function USOverview() {
             }`}
           >
             <Image
-              className={"h-1/3 rounded-lg md:max-h-[600px] max-h-[300px]"}
+              className={"h-1/3 rounded-lg md:max-h-[700px] max-h-[300px]"}
               src={bondType[selectedIndex].image} // Display the image corresponding to the selected card
               alt="Revenue Forecast"
             />
