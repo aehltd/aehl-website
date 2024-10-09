@@ -8,14 +8,9 @@ type presentationItem = {
 };
 const presentations: presentationItem[] = [
   {
-    date: "8/4/2024",
-    name: "AEHL Company Presentation August 2024",
-    url: "https://aehltd.squarespace.com/s/AEHL-Company-Presentation-August-2024-v2.pdf",
-  },
-  {
-    date: "6/18/2024",
-    name: "AEHL Company Presentation June 2024",
-    url: "https://aehltd.squarespace.com/s/AEHL-Company-Presentation-June-2024.pdf",
+    date: "10/9/2024",
+    name: "AEHL Company Presentation October 2024",
+    url: "https://res.cloudinary.com/aehl/image/upload/v1728482324/AEHL_Company_Presentation_October_2024_nqo86x.pdf",
   },
 ];
 
