@@ -24,7 +24,7 @@ const documents: DocumentType[] = [
     url: "https://res.cloudinary.com/aehl/image/upload/v1724337828/Antelope_Enterprise_-_Compensation_Committee_Charter_-_Amended_Restated_ts9arz.pdf",
   },
   {
-    name: "Whistleblower Policy of China Ceramics",
+    name: "Whistleblower Policy of Antelope Enterprise",
     url: "https://res.cloudinary.com/aehl/image/upload/v1724337827/Antelope_Enterprise_-_Whistleblower_Policy_esfsyr.pdf"
   },
 ];
