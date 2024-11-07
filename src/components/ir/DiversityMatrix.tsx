@@ -9,7 +9,7 @@ const MatrixData: MatrixDataType = {
   countryOfOfficers: "China",
   foreignPrivIssuer: true,
   disclosureProhibitedUnderHomeLaw: false,
-  numDirectors: 9,
+  numDirectors: 8,
 };
 
 type GenderDataType = {
@@ -21,7 +21,7 @@ type GenderDataType = {
 
 const GenderData: GenderDataType = {
   numFemale: 2,
-  numMale: 7,
+  numMale: 6,
   numNonBinary: 0,
   numNotDisclosed: 0,
 };

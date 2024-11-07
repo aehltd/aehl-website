@@ -22,14 +22,23 @@ type BoardEntry = {
 };
 
 const board: BoardEntry[] = [
+  // {
+  //   name: "Weilai Zhang",
+  //   position: "CEO",
+  //   description:
+  //     "Mr. Zhang has served as our Chief Executive Officer since January 2023 and joined our Board in February 2023. From 2011 to 2020, he acted as the Chairman of Huitong Tianxia Investment Ltd., an investment company. Since 2020, Mr. Zhang has acted as the chariman of Jinke Yulv Technology Co., Ltd., which is an International Technology firm in China. Mr. Zhang completed the course and obtained a Diploma in Capital and M&A Entrepreneurship from Fudan University in 2021, and a Diploma in Finance and Capital Investment from Southwest University in Finance and Economics in 2014.",
+  //   image:
+  //     "https://res.cloudinary.com/aehl/image/upload/v1724428444/weilai-zhang_drtijr.png",
+  //   linkedin: "https://www.linkedin.com/in/aehl/",
+  // },
   {
-    name: "Weilai Zhang",
-    position: "CEO",
+    name: "Ishak Han",
+    position: "Chairman",
     description:
-      "Mr. Zhang has served as our Chief Executive Officer since January 2023 and joined our Board in February 2023. From 2011 to 2020, he acted as the Chairman of Huitong Tianxia Investment Ltd., an investment company. Since 2020, Mr. Zhang has acted as the chariman of Jinke Yulv Technology Co., Ltd., which is an International Technology firm in China. Mr. Zhang completed the course and obtained a Diploma in Capital and M&A Entrepreneurship from Fudan University in 2021, and a Diploma in Finance and Capital Investment from Southwest University in Finance and Economics in 2014.",
+      "Mr. Ishak Han joined our Board in November 2022. Mr. Han is the General Manager of Shenzhen Baisifu Industrial Co., Ltd., which engages in property management and leasing, management services for catering businesses, and enterprise management consulting. Having founded the firm in 2017, Mr. Han developed Shenzhen Baisifu Industrial Co., Ltd.’s marketing strategy, management policies, financial budgeting, and corporate planning activities. From 2011 to 2016, Mr. Han was the General Manager of Shenzhen Baisi Technology Co., Ltd. which engages in the development of self-service website application systems, the training and development of online ventures, online marketing training, and e-commerce product consignments. As the founder of Shenzhen Baisi Technology Co., Ltd., Mr. Han oversaw its financial budgeting and corporate planning functions, and was responsible for its overall marketing strategy. Mr. Han graduated with a higher degree diploma in marketing from Guangdong Open University in 2021.",
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1724428444/weilai-zhang_drtijr.png",
-    linkedin: "https://www.linkedin.com/in/aehl/",
+      "https://res.cloudinary.com/aehl/image/upload/v1724428442/ishak-han_eolqsr.png",
+    linkedin: "",
   },
   {
     name: "Chungen Song",
@@ -59,21 +68,21 @@ const board: BoardEntry[] = [
     linkedin: "",
   },
   {
-    name: "Ishak Han",
-    position: "Board Member",
-    description:
-      "Mr. Ishak Han joined our Board in November 2022. Mr. Han is the General Manager of Shenzhen Baisifu Industrial Co., Ltd., which engages in property management and leasing, management services for catering businesses, and enterprise management consulting. Having founded the firm in 2017, Mr. Han developed Shenzhen Baisifu Industrial Co., Ltd.’s marketing strategy, management policies, financial budgeting, and corporate planning activities. From 2011 to 2016, Mr. Han was the General Manager of Shenzhen Baisi Technology Co., Ltd. which engages in the development of self-service website application systems, the training and development of online ventures, online marketing training, and e-commerce product consignments. As the founder of Shenzhen Baisi Technology Co., Ltd., Mr. Han oversaw its financial budgeting and corporate planning functions, and was responsible for its overall marketing strategy. Mr. Han graduated with a higher degree diploma in marketing from Guangdong Open University in 2021.",
-    image:
-      "https://res.cloudinary.com/aehl/image/upload/v1724428442/ishak-han_eolqsr.png",
-    linkedin: "",
-  },
-  {
     name: "Huashu Yuan",
     position: "Board Member",
     description:
       "Ms. Huashu Yuan joined our Board in March 2023. Ms. Yuan has been the marketing specialist of Vesta living corp. since March 2022. Ms. Yuan served as an outside consultant providing marketing advice to the Company from June 2021 to February 2023. Ms. Yuan served as the marketing manager for American Tianfu-Wenhui Publishing Company from March 2021 to February 2022. Ms. Yuan worked at Strands Haircare Inc. as a social media intern from October 2020 to February 2021. Ms. Yuan obtained her Master’s degree in Emerging Media Studies from Boston University in 2020 and obtained her Bachelor’s degree in Communication Science and Rhetoric Studies from University of Wisconsin-Madison in 2019.",
     image:
       "https://res.cloudinary.com/aehl/image/upload/v1724428441/huashu-yuan_tdkfdp.png",
+    linkedin: "",
+  },
+  {
+    name: "Houyou Zhang",
+    position: "Board Member",
+    description:
+      "Mr. Houyou Zhang has been a director of YiXiang International LLC since March 2023, where he secures projects for investment and conducted due diligence. From May 2017 to October 2022, Mr. Zhang was the chairman of Shanghai KKM Asset Management Co., Ltd., a firm that he founded and where he was engaged in investment and asset management. Mr. Zhang is experienced in quantitative trading in China with 20 years of experience in the finance industry, and he has published widely on finance and investments. Mr. Zhang received a Bachelor’s degree in Engineering from Sichuan University in 2002.",
+    image:
+      "https://res.cloudinary.com/aehl/image/upload/v1724429464/Image_20240618105142_spfcnp.jpg",
     linkedin: "",
   },
   {
@@ -92,15 +101,6 @@ const board: BoardEntry[] = [
       'Mr. Junjie Dong is currently the Chief Technology Officer of Antelope Holdings (Chengdu) Co., Ltd., a wholly owned subsidiary of the Company that is engaged in computer consulting and software development. Mr. Dong is responsible for its strategic direction and overseeing its technological advancements, and he has held this position since July 2023. From February 2018 to July 2023, Mr. Dong was the Chief Executive Officer ("CEO") of Shenzhen Hongtaiju Technology Development Co., Ltd., an information technology company, where he was mainly responsible for the company\'s strategic planning and operational management. From August 2015 to December 2018, Mr. Dong was CEO of Shenzhen Weidai Yingxing Financial Services Co., Ltd, a company that provides financial services. From May 2013 to July 2015, he was the CEO of Shenzhen Hongtaiju Investment Consulting Co., Ltd., a company that provides financial services. Mr. Dong attended Hainan Vocational College of Science and Technology from March 2015 to December 2018, and received the junior college degree.',
     image:
       "https://res.cloudinary.com/aehl/image/upload/v1724429516/WechatIMG21_rb7qxg.jpg",
-    linkedin: "",
-  },
-  {
-    name: "Houyou Zhang",
-    position: "Board Member",
-    description:
-      "Mr. Houyou Zhang has been a director of YiXiang International LLC since March 2023, where he secures projects for investment and conducted due diligence. From May 2017 to October 2022, Mr. Zhang was the chairman of Shanghai KKM Asset Management Co., Ltd., a firm that he founded and where he was engaged in investment and asset management. Mr. Zhang is experienced in quantitative trading in China with 20 years of experience in the finance industry, and he has published widely on finance and investments. Mr. Zhang received a Bachelor’s degree in Engineering from Sichuan University in 2002.",
-    image:
-      "https://res.cloudinary.com/aehl/image/upload/v1724429464/Image_20240618105142_spfcnp.jpg",
     linkedin: "",
   },
 ];

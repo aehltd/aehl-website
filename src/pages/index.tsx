@@ -202,7 +202,7 @@ export default function Home() {
               thereby deliver significant value to our shareholders.
             </p>
           </div>
-          <div className="flex flex-col items-end justify-end">
+          {/* <div className="flex flex-col items-end justify-end">
             <img
               src="https://res.cloudinary.com/aehl/image/upload/v1724428444/weilai-zhang_drtijr.png"
               alt="ceo"
@@ -212,7 +212,7 @@ export default function Home() {
               Weilai &quot;Will&quot; Zhang
             </h2>
             <p className="text-midnight2">AEHL Chairman and CEO</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
