@@ -9,24 +9,32 @@ type CommitteeItem = {
 };
 
 const Committee: CommitteeItem[] = [
-  {
-    honorific: "Mr.",
-    name: "Weilai Zhang",
-    position: "Chairman",
-  },
-  {
-    honorific: "Ms.",
-    name: "Tingting Zhang",
-    position: "Director & Corp. Secretary",
-  },
+  // {
+  //   honorific: "Mr.",
+  //   name: "Weilai Zhang",
+  //   position: "Chairman",
+  // },
   {
     honorific: "Mr.",
     name: "Ishak Han",
-    position: "Independent Director",
+    position: "Chairman",
     auditCommittee: "M",
     compensationCommittee: "M",
     nominatingCommittee: "M",
   },
+  {
+    honorific: "Ms.",
+    name: "Tingting Zhang",
+    position: "Director",
+  },
+  // {
+  //   honorific: "Mr.",
+  //   name: "Ishak Han",
+  //   position: "Independent Director",
+  //   auditCommittee: "M",
+  //   compensationCommittee: "M",
+  //   nominatingCommittee: "M",
+  // },
   {
     honorific: "Ms.",
     name: "Huashu Yuan",
@@ -59,7 +67,7 @@ const Committee: CommitteeItem[] = [
   {
     honorific: "Mr.",
     name: "Junjie Dong",
-    position: "Director",
+    position: "Director & Corp. Secretary",
   },
   {
     honorific: "Ms.",
