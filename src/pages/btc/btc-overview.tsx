@@ -1,5 +1,5 @@
 import BtcBanner from "../../components/banner/AehlBtcBanner"
-import { Statistic } from 'antd';
+import { Statistic, Card } from 'antd';
 
 {/*
     1. Company Logo
@@ -9,6 +9,9 @@ import { Statistic } from 'antd';
     5. Introduction
     6. App Screenshots
     */}
+
+
+const { Meta } = Card;
 
 export default function btcOverview() {
     return (
@@ -31,6 +34,38 @@ export default function btcOverview() {
                 </div>
             </div>
             {/* </div> */}
+
+            <div className="row">
+                <div className="grid grid-cols-3 gap-4">
+                    <div>
+                        <Card
+                            hoverable
+                            style={{ width: 240 }}
+                            cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+                        >
+                            <Meta title="App Features | Detailed Overview" description="Explore the unique features and functionalities of our app that enhance user experience and productivity." />
+                        </Card>
+                    </div>
+                    <div>
+                        <Card
+                            hoverable
+                            style={{ width: 240 }}
+                            cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+                        >
+                            <Meta title="App Features | Detailed Overview" description="Explore the unique features and functionalities of our app that enhance user experience and productivity." />
+                        </Card>
+                    </div>
+                    <div>
+                        <Card
+                            hoverable
+                            style={{ width: 240 }}
+                            cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+                        >
+                            <Meta title="App Features | Detailed Overview" description="Explore the unique features and functionalities of our app that enhance user experience and productivity." />
+                        </Card>
+                    </div>
+                </div>
+            </div>
 
         </div>
     );
