@@ -1,4 +1,4 @@
-import BoardRow from "@/components/ir/Board1";
+import BoardRow from "@/components/ir/Board";
 
 export default function IRBoard() {
   return (

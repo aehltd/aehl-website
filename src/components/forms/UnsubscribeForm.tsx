@@ -6,9 +6,9 @@ export default function UnsubscribeForm () {
 
   return (
     <Form layout="vertical" onFinish={handleFinish}>
-      {/* <h1 className="font-bold tracking-wide text-3xl">Unsubscribe from Email Alerts</h1> */}
       <div className="max-w-lg">
         <h2 className="mb-4">Enter your email address below.</h2>
+        {/* Enter all the info */}
         <div>
           <Form.Item label="Email Address" name="email" className="smalltext" rules={[
           { 
