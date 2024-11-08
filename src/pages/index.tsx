@@ -202,6 +202,7 @@ export default function Home() {
               thereby deliver significant value to our shareholders.
             </p>
           </div>
+          {/* Weilai Zhang's image (Keep it for now) */}
           {/* <div className="flex flex-col items-end justify-end">
             <img
               src="https://res.cloudinary.com/aehl/image/upload/v1724428444/weilai-zhang_drtijr.png"

@@ -2,7 +2,7 @@ type CommitteeItem = {
   honorific: string;
   name: string;
   position: string;
-  //The following are committee positions, with null, Chairperson, and Member
+  // Committee positions: options are null, Chairperson, or Member
   auditCommittee?: string;
   compensationCommittee?: string;
   nominatingCommittee?: string;
@@ -27,14 +27,6 @@ const Committee: CommitteeItem[] = [
     name: "Tingting Zhang",
     position: "Director",
   },
-  // {
-  //   honorific: "Mr.",
-  //   name: "Ishak Han",
-  //   position: "Independent Director",
-  //   auditCommittee: "M",
-  //   compensationCommittee: "M",
-  //   nominatingCommittee: "M",
-  // },
   {
     honorific: "Ms.",
     name: "Huashu Yuan",
