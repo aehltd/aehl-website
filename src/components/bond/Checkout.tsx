@@ -206,7 +206,7 @@ export default function Checkout({ index }: { index: number }) {
       title: "Bond Name",
       dataIndex: "bond",
       key: "bond",
-      fixed: "left",
+      fixed: "left" as const,
       width: 100,
     },
     {
