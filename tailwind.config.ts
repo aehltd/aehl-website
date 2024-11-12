@@ -32,6 +32,14 @@ const config: Config = {
       'sky': '#93DEFF',
       "ahel-red": '#F5004F',
       "darkBlue": '#4F98CA',
+      pink: {
+        300: '#ff90c1',
+        500: '#ff61a6',
+        700: '#e8488a',
+      },
+      orange:{
+        500: '#f97316'
+      },
       gray: {
           50: '#f9fafb',
           100: '#f3f4f6',
