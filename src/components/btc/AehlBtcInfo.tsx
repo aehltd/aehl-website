@@ -2,7 +2,9 @@ import React from 'react';
 import { Button, Typography, Image } from 'antd';
 import {
   DownloadOutlined,
-  DoubleRightOutlined
+  DoubleRightOutlined,
+  AppleOutlined,
+  AndroidOutlined
 } from '@ant-design/icons';
 
 export default function AehlBtcInfo() {
@@ -13,9 +15,9 @@ export default function AehlBtcInfo() {
         <div>
           <div className='flex justify-center px-5'>
             <img
-              className="object-cover rounded-3xl"
+              className="object-cover rounded-3xl w-3/4"
               src="https://res.cloudinary.com/aehl/image/upload/v1731381615/BTC_Logo_t2fjw6.jpg"
-              alt="Picture of App"
+              alt="App Logo"
             />
           </div>
         </div>
@@ -26,13 +28,13 @@ export default function AehlBtcInfo() {
         </div>
         <div>
           <div className='p-2'>
-            <Button color="default" shape="round" icon={<DownloadOutlined />} size="large" className='capitalize w-full'>
-              Download for ios
+            <Button color="default" shape="round" size="large" className='capitalize w-full'>
+            <AppleOutlined /> Download for ios <DownloadOutlined />
             </Button>
           </div>
           <div className='p-2'>
-            <Button color="default" shape="round" icon={<DownloadOutlined />} size="large" className='capitalize w-full'>
-              Download for Android
+            <Button color="default" shape="round" size="large" className='capitalize w-full'>
+            <AndroidOutlined /> Download for Android <DownloadOutlined />
             </Button>
           </div>
         </div>

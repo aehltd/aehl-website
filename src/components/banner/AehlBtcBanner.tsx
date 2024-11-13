@@ -7,22 +7,11 @@ import {
 export default function AehlBtcBanner() {
   return (
     <div>
-      <div className='grid md:grid-cols-2 grid-cols-1 gap-3 items-center'>
-        <div>
-          <img
-            className="object-cover rounded-3xl"
-            src="https://res.cloudinary.com/aehl/image/upload/v1731423719/Banner0-2_kf5u5f.png"
-            alt="Picture of App"
-          />
-        </div>
-        <div className='flex justify-center'>
-          <img
-            className="object-cover rounded-3xl"
-            src="https://res.cloudinary.com/aehl/image/upload/v1731418622/Banner1-2_wkr212.png"
-            alt="Picture of App"
-          />
-        </div>
-      </div>
+      <img
+        className="w-full object-cover max-h-[75vh] sm:max-h-[50vh] md:max-h-[60vh] lg:max-h-[70vh] xl:max-h-[75vh] object-top"
+        src="https://res.cloudinary.com/aehl/image/upload/v1731511129/BTC-Banner_nxd0gp.png"
+        alt="Picture of App"
+      />
     </div>
   );
 }
