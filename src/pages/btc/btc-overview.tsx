@@ -1,4 +1,4 @@
-import BtcInfo from "../../components/banner/AehlBtcInfo"
+import BtcInfo from "../../components/btc/AehlBtcInfo"
 import AehlBtcBanner from "@/components/banner/AehlBtcBanner";
 import { Statistic, Card } from 'antd';
 
@@ -68,7 +68,7 @@ export default function btcOverview() {
                             hoverable
                             cover={<img alt="example" src="https://res.cloudinary.com/aehl/image/upload/v1731381354/Banner4_ve4ejt.png" />}
                         >
-                            <Meta title="App Features | Detailed Overview" description="Explore the unique features and functionalities of our app that enhance user experience and productivity." />
+                            <Meta title="App Features | Detailed Overview" description="Stay ahead of the trends with our real-time Hot Dramas updates! Our platform keeps you in the loop, delivering the latest and most popular dramas as soon as they’re released. No more waiting or searching—every time you log in, you'll find fresh, trending episodes tailored to keep you entertained and engaged." />
                         </Card>
                     </div>
                 </div>
