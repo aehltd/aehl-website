@@ -7,7 +7,7 @@ import AehlBtcFeature from "@/components/btc/AehlBtcFeature";
 export default function btcOverview() {
     return (
         <div id="container" className="container">
-            <div className="w-full pb-10">
+            <div className="xl:w-[120vh] w-full relative">
                 <AehlBtcBanner />
             </div>
             <div className="row">
@@ -17,7 +17,7 @@ export default function btcOverview() {
                 <AehlBtcStatistic />
             </div>
             <div className="row">
-                <AehlBtcFeature/>
+                <AehlBtcFeature />
             </div>
         </div>
     );

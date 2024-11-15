@@ -1,9 +1,12 @@
 import { Button } from "antd";
 import { useRouter } from "next/router";
 import Link from "next/link";
+
+// Homepage elements
+import HomePageCarousel from "@/components/HomePageCarousel";
+import HomePageInfo from "@/components/homePage/homePageInfo";
 import EnergyGauge from "@/components/EnergyGauge";
 import RevenueGauge from "@/components/RevenueGauge";
-import HomePageCarousel from "@/components/HomePageCarousel";
 
 export default function Home() {
   const router = useRouter();
@@ -12,17 +15,8 @@ export default function Home() {
     <div id="container" className="container">
       <HomePageCarousel />
 
-      <div className="flex w-full justify-center">
-        <div id="mission-statement" className="row text-center">
-          <h1 className="tracking-widest font-bold text-midnight">
-            Mission Statement
-          </h1>
-          <h2 className="text-midnight2">
-            “To provide exceptional value to our customers in growing and
-            evolving business segments driven by our commitment, passion and
-            world-class talent.”
-          </h2>
-        </div>
+      <div className="row">
+        <HomePageInfo />
       </div>
 
       {/* <div className="flex w-full bg-slate-200 justify-center">

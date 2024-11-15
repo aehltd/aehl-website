@@ -6,7 +6,9 @@ import AehlKylinBanner from "@/components/banner/AehlKylinBanner";
 export default function KylinOverview() {
   return (
     <div id="container" className="container">
-      <AehlKylinBanner />
+      <div className="xl:w-[120vh] w-full pb-10">
+        <AehlKylinBanner />
+      </div>
 
       <div className="row grid grid-cols-3 gap-4 justify-center items-center text-center p-4">
         <div className="border-solid hover:border-double border-4 border-midnight2 rounded-4xl p-2 flex flex-col items-center">

@@ -3,7 +3,9 @@ import AehlUsBanner from "../../components/banner/AehlUsBanner";
 export default function USOverview() {
   return (
     <div id="container" className="container">
-      <AehlUsBanner />
+      <div className="xl:w-[120vh] w-full pb-10">
+        <AehlUsBanner />
+      </div>
 
       <div className="flex row flex-col">
         <h1 className="mb-4 tracking-wider font-bold">Vision & Mission</h1>

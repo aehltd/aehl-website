@@ -5,37 +5,100 @@ import HomePageBanner from "./banner/HomePageBanner";
 import AehlUsBanner from "./banner/AehlUsBanner";
 import AehlKylinBanner from "./banner/AehlKylinBanner";
 import AehlInvestorBanner from "./banner/AehlInvestorBanner";
-import Link from "next/link";
+import AehlBtcBanner from "./banner/AehlBtcBanner";
 
-const contentStyle: React.CSSProperties = {
-  height: "60vh",
-  color: "#fff",
-  textAlign: "center",
-  background: "#364d79",
-};
+
+
+import Link from "next/link";
 
 export default function HomePageCarousel() {
   return (
-    <div className="w-full h-[65vh]">
+    <div className="xl:w-[120vh] w-full">
       <Carousel autoplay arrows adaptiveHeight={true}>
-        <div className="h-[65vh]">
+
+        {/* HomePage Banner */}
+        <div className="relative">
           <Link href="/">
-            <HomePageBanner />
+            <div className="blur-[2px]">
+              <HomePageBanner />
+            </div>
+            <img
+              className="absolute inset-0 m-auto w-1/2"
+              src="https://res.cloudinary.com/aehl/image/upload/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
+              alt="AEHL US"
+            />
+            <p className="absolute inset-x-0 top-[70%] text-center text-sm md:text-3xl font-semibold text-white">
+              A Beacon of Innovation in an Evolving Energy and Technology Landscape
+            </p>
           </Link>
         </div>
-        <div className="h-[65vh]">
+
+        {/* AEHL US PAGE */}
+        <div className="relative">
           <Link href="/aehl-us/corporate-overview">
-            <AehlUsBanner />
+            <div className="blur-[2px]">
+              <AehlUsBanner />
+            </div>
+            <img
+              className="absolute inset-0 m-auto w-1/2"
+              src="https://res.cloudinary.com/aehl/image/upload/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
+              alt="AEHL US"
+            />
+            <p className="absolute inset-x-0 top-[70%] text-center text-sm md:text-3xl font-semibold text-white">
+              Next Generation Infrastructure to Power{" "}
+              <span className="text-dodger-blue-400">AI</span>
+            </p>
           </Link>
         </div>
-        <div className="h-[65vh]">
-          <Link href="/aehl-us/business-overview">
-            <AehlKylinBanner />
+
+        {/* AEHL kylin PAGE */}
+        <div className="relative">
+          <Link href="/aehl-kylin/business-overview">
+            <div className="blur-[4px]">
+              <AehlKylinBanner />
+            </div>
+            <img
+              className="absolute inset-0 m-auto w-1/2"
+              src="https://res.cloudinary.com/aehl/image/upload/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
+              alt="AEHL US"
+            />
+            <p className="absolute inset-x-0 top-[70%] text-center text-sm md:text-3xl font-semibold text-white">
+              The <span className="text-sky">Future</span> of Livestreaming Ecommerce
+            </p>
           </Link>
         </div>
-        <div className="h-[65vh]">
+
+        {/* BTC Page */}
+        <div className="relative">
           <Link href="/ir/our_values">
-            <AehlInvestorBanner />
+            <div className="blur-[4px]">
+              <AehlBtcBanner />
+            </div>
+            <img
+              className="absolute inset-0 m-auto w-1/2"
+              src="https://res.cloudinary.com/aehl/image/upload/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
+              alt="AEHL US"
+            />
+            <p className="absolute inset-x-0 top-[70%] text-center text-sm md:text-3xl font-semibold text-white">
+              The World's Premier Platform for <span className="text-pink-500"> Short Drama</span>
+            </p>
+          </Link>
+        </div>
+
+        {/* Our Value PAGE */}
+        <div className="relative">
+          <Link href="/ir/our_values">
+            <div className="blur-[4px]">
+              <AehlInvestorBanner />
+            </div>
+            <img
+              className="absolute inset-0 m-auto w-1/2"
+              src="https://res.cloudinary.com/aehl/image/upload/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
+              alt="AEHL US"
+            />
+            <p className="absolute inset-x-0 top-[70%] text-center text-sm md:text-3xl font-semibold text-white">
+              Discover Our <span className="text-green">Investor Relations</span>
+            </p>
           </Link>
         </div>
       </Carousel>
