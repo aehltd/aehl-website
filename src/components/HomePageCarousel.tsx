@@ -7,8 +7,6 @@ import AehlKylinBanner from "./banner/AehlKylinBanner";
 import AehlInvestorBanner from "./banner/AehlInvestorBanner";
 import AehlBtcBanner from "./banner/AehlBtcBanner";
 
-
-
 import Link from "next/link";
 
 export default function HomePageCarousel() {
@@ -80,7 +78,7 @@ export default function HomePageCarousel() {
               alt="AEHL US"
             />
             <p className="absolute inset-x-0 top-[70%] text-center text-sm md:text-3xl font-semibold text-white">
-              The World's Premier Platform for <span className="text-pink-500"> Short Drama</span>
+              The World&apos;s Premier Platform for <span className="text-pink-500"> Short Drama</span>
             </p>
           </Link>
         </div>
