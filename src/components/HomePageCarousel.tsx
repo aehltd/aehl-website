@@ -25,8 +25,8 @@ export default function HomePageCarousel() {
               src="https://res.cloudinary.com/aehl/image/upload/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
               alt="AEHL US"
             />
-            <p className="absolute inset-x-0 top-[70%] text-center text-sm md:text-3xl font-semibold text-white">
-              A Beacon of Innovation in an Evolving Energy and Technology Landscape
+            <p className="absolute inset-x-0 top-[70%] font-goldman text-center text-sm md:text-3xl font-semibold text-white">
+              A Beacon of Innovation in an <br /> Evolving Energy and Technology Landscape
             </p>
           </Link>
         </div>

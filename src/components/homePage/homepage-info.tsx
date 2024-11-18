@@ -9,15 +9,17 @@ import {
 
 import { Button } from "antd";
 
-export default function homePageInfo() {
+export default function HomePageInfo() {
     return (
         <div className='grid grid-cols-4 gap-8'>
             <div className='col-span-4 text-center py-5'>
-                <h2 className='font-bold font-sans md:text-6xl text-4xl'>Mission Statement</h2>
+                <h2 className='font-bold md:text-6xl text-4xl font-goldman'>Mission Statement</h2>
                 <p className='font-sans text-lg'>“To provide exceptional value to our customers in growing and evolving business segments driven by our commitment, passion and world-class talent.”</p>
             </div>
             <div className='grid grid-cols-1 gap-0 md:col-span-2 col-span-4'>
-                <h2 className='font-bold md:text-4xl text-2xl'>A New Energy Model <AlertTwoTone twoToneColor="" /></h2>
+                <h2 className='flex font-bold md:text-3xl text-2xl items-center'>A New Energy Model <span className="material-symbols-outlined md:text-2xl text-xl p-1 text-pumpkin-300">
+                    electric_bolt
+                </span></h2>
                 <p className='px-4 md:p-0 p-4'>
                     With data centers based in Texas, we are an emerging
                     energy supply business that aims to provide an innovative,
@@ -35,7 +37,7 @@ export default function homePageInfo() {
             <div className='md:col-span-2 col-span-4'>
                 <img
                     className='w-full rounded-lg'
-                    src="https://res.cloudinary.com/aehl/image/upload/v1724684787/Untitled_design_xpg7sk.jpg"
+                    src="https://res.cloudinary.com/aehl/image/upload/v1731948852/Homepage_Energy_lghdgb.png"
                     alt="Picture of Kylin"
                 />
             </div>
@@ -47,7 +49,10 @@ export default function homePageInfo() {
                 />
             </div>
             <div className='grid grid-cols-1 gap-0 md:col-span-2 col-span-4 md:order-2 order-1'>
-                <h2 className='font-bold md:text-4xl text-2xl'>The Livestreaming Ecommerce Frontier <AccountBookTwoTone /></h2>
+                <h2 className='font-bold md:text-3xl text-2xl'>The Livestreaming </h2>
+                <h2 className='flex items-center font-bold md:text-3xl text-2xl'>Ecommerce Frontier <span className="material-symbols-outlined md:text-2xl text-xl p-1 text-coral-red-500">
+                live_tv
+                </span></h2>
                 <p className='px-4 md:p-0 p-4'>
                     Operating in China as Kylin Cloud, we aim to provide a
                     one-stop solution in the rapidly growing field of

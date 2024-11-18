@@ -65,13 +65,17 @@ export default function Footer() {
           <div className="text-start px-5">
             <ul className="list-none">
               <li className="py-2">
-                <h3 className="font-semibold tracking-wide">AEHL US</h3>
+                <h3 className="flex items-center font-semibold tracking-wide">AEHL US <span className="material-symbols-outlined p-1">
+                  energy_savings_leaf
+                </span></h3>
               </li>
               <li>
                 <AehlUsLinks />
               </li>
               <li className="py-2">
-                <h3 className="font-semibold tracking-wide">AEHL Kylin</h3>
+                <h3 className="flex items-center font-semibold tracking-wide">AEHL Kylin<span className="material-symbols-outlined p-1">
+                  cases
+                </span></h3>
               </li>
               <li>
                 <AehlKylinLinks />
@@ -82,7 +86,9 @@ export default function Footer() {
           <div className="text-start px-5">
             <ul className="list-none">
               <li className="py-2">
-                <h3 className="font-semibold tracking-wide">Investor</h3>
+                <h3 className="flex items-center font-semibold tracking-wide">Investor <span className="material-symbols-outlined p-1">
+                  handshake
+                </span></h3>
               </li>
               <li>
                 <IrLinks />
@@ -91,7 +97,9 @@ export default function Footer() {
           </div>
 
           <div className="text-start py-2">
-            <h3 className="font-semibold tracking-wide">Contact Info</h3>
+            <h3 className="flex items-center font-semibold tracking-wide">Contact Info <span className="material-symbols-outlined p-1">
+              contact_page
+            </span></h3>
             <div className="text-start">
               <div className="py-2">
                 <p className="inline-block pr-2 text-midnight">Phone: </p>

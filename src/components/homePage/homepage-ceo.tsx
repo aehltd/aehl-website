@@ -7,8 +7,8 @@ import {
     CaretDownOutlined
 } from '@ant-design/icons';
 
-export default function homePageCeo() {
-    const [isExpanded, setIsExpanded] = useState(true);
+export default function HomePageCeo() {
+    const [isExpanded, setIsExpanded] = useState(false);
 
     const toggleClamp = () => {
         setIsExpanded(!isExpanded);
@@ -16,10 +16,10 @@ export default function homePageCeo() {
 
     return (
         <div className="grid grid-cols-4 gap-3">
-            <h1 className="col-span-4 font-bold">
+            <h1 className="col-span-4 font-bold font-goldman text-4xl">
                 <MessageTwoTone className="p-2" />CEO Message:
             </h1>
-            <p className={`col-span-4 px-10 py-3 md:line-clamp-none ${isExpanded ? 'line-clamp-none' : 'line-clamp-4'}`}> We primarily operate in two exciting business segments,
+            <p className={`col-span-4 px-10 py-3 md:line-clamp-none ${isExpanded ? 'line-clamp-none' : 'line-clamp-5'}`}> We primarily operate in two exciting business segments,
                 livestreaming e-commerce and energy solutions. I believe that
                 there is a prosperous future ahead for the development of
                 innovative energy solutions. The boom in the AI industry as well

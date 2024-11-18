@@ -18,6 +18,12 @@ export default function Document() {
           href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined"
           rel="stylesheet"
         />
+        {/* Custom Font */}
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet" />
+
       </Head>
       <body>
         <Main />
