@@ -9,7 +9,7 @@ export default function AehlBtcBanner() {
     <div>
       <img
         className="w-full"
-        src="https://res.cloudinary.com/aehl/image/upload/v1731684147/Test_Banner_Design_sgpcjs.png"
+        src="https://res.cloudinary.com/aehl/image/upload/v1732035393/IMG_4288_hvv2tt.png"
         alt="Picture of App"
       />
     </div>

@@ -42,7 +42,7 @@ export default function HomePageCarousel() {
               src="https://res.cloudinary.com/aehl/image/upload/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
               alt="AEHL US"
             />
-            <p className="absolute inset-x-0 top-[70%] text-center text-sm md:text-3xl font-semibold text-white">
+            <p className="absolute inset-x-0 top-[70%] text-center text-sm md:text-3xl font-semibold font-goldman text-white">
               Next Generation Infrastructure to Power{" "}
               <span className="text-dodger-blue-400">AI</span>
             </p>
@@ -60,7 +60,7 @@ export default function HomePageCarousel() {
               src="https://res.cloudinary.com/aehl/image/upload/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
               alt="AEHL US"
             />
-            <p className="absolute inset-x-0 top-[70%] text-center text-sm md:text-3xl font-semibold text-white">
+            <p className="absolute inset-x-0 top-[70%] text-center text-sm md:text-3xl font-semibold font-goldman text-white">
               The <span className="text-sky">Future</span> of Livestreaming Ecommerce
             </p>
           </Link>
@@ -68,7 +68,7 @@ export default function HomePageCarousel() {
 
         {/* BTC Page */}
         <div className="relative">
-          <Link href="/ir/our_values">
+          <Link href="/btc/btc-overview">
             <div className="blur-[4px]">
               <AehlBtcBanner />
             </div>
@@ -77,7 +77,7 @@ export default function HomePageCarousel() {
               src="https://res.cloudinary.com/aehl/image/upload/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
               alt="AEHL US"
             />
-            <p className="absolute inset-x-0 top-[70%] text-center text-sm md:text-3xl font-semibold text-white">
+            <p className="absolute inset-x-0 top-[70%] text-center text-sm md:text-3xl font-semibold font-goldman text-white">
               The World&apos;s Premier Platform for <span className="text-pink-500"> Short Drama</span>
             </p>
           </Link>
@@ -94,7 +94,7 @@ export default function HomePageCarousel() {
               src="https://res.cloudinary.com/aehl/image/upload/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
               alt="AEHL US"
             />
-            <p className="absolute inset-x-0 top-[70%] text-center text-sm md:text-3xl font-semibold text-white">
+            <p className="absolute inset-x-0 top-[70%] text-center text-sm md:text-3xl font-semibold font-goldman text-white">
               Discover Our <span className="text-green">Investor Relations</span>
             </p>
           </Link>
