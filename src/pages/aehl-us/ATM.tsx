@@ -1,5 +1,5 @@
-import ATM_table from "../../components/bond/ATM-table";
-import ExpectElectricity from "../../components/bond/Expect-Electricity";
+import ATM_table from "../../components/atmBond/ATM-table";
+import ExpectElectricity from "../../components/atmBond/Expect-Electricity";
 import { Divider } from "antd";
 
 export default function USOverview() {

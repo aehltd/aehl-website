@@ -1,7 +1,8 @@
-import BtcInfo from "../../components/btc/AehlBtcInfo"
-import AehlBtcBanner from "@/components/banner/AehlBtcBanner";
-import AehlBtcStatistic from "@/components/btc/AehlBtcStatistic";
-import AehlBtcFeature from "@/components/btc/AehlBtcFeature";
+import BtcInfo from "../../components/btc/aehlBtcInfo"
+import AehlBtcBanner from "@/components/banner/aehlBtcBanner";
+import AehlBtcPromote from "@/components/btc/aehlBtcPromote";
+import AehlBtcFeature from "@/components/btc/aehlBtcFeature";
+import AehlBtcStatistic from "@/components/btc/aehlBtcStatistic";
 
 
 export default function btcOverview() {
@@ -9,6 +10,11 @@ export default function btcOverview() {
         <div id="container" className="container">
             <div className="xl:w-[120vh] w-full relative">
                 <AehlBtcBanner />
+            </div>
+            <div className="bg-black xl:w-[120vh] w-full flex justify-center">
+                <div className="row">
+                    <AehlBtcPromote />
+                </div>
             </div>
             <div className="row">
                 <BtcInfo />

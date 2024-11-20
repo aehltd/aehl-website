@@ -5,14 +5,14 @@ import HomePageBanner from "./banner/HomePageBanner";
 import AehlUsBanner from "./banner/AehlUsBanner";
 import AehlKylinBanner from "./banner/AehlKylinBanner";
 import AehlInvestorBanner from "./banner/AehlInvestorBanner";
-import AehlBtcBanner from "./banner/AehlBtcBanner";
+import AehlBtcBanner from "./banner/aehlBtcBanner";
 
 import Link from "next/link";
 
 export default function HomePageCarousel() {
   return (
     <div className="xl:w-[120vh] w-full">
-      <Carousel autoplay arrows adaptiveHeight={true}>
+      <Carousel autoplay arrows adaptiveHeight={true} autoplaySpeed={2000}>
 
         {/* HomePage Banner */}
         <div className="relative">

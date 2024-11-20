@@ -15,7 +15,7 @@ export default function AehlBtcInfo() {
         <div>
           <div className='flex justify-center px-5 pb-5'>
             <img
-              className="object-cover rounded-3xl w-3/4"
+              className="object-cover rounded-3xl md:w-3/4 w-1/2"
               src="https://res.cloudinary.com/aehl/image/upload/v1731381615/BTC_Logo_t2fjw6.jpg"
               alt="App Logo"
             />
@@ -50,7 +50,6 @@ export default function AehlBtcInfo() {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );
