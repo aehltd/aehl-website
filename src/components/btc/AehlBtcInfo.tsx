@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Typography, Image } from 'antd';
+import Link from "next/link";
 import {
   DownloadOutlined,
   DoubleRightOutlined,
@@ -32,7 +33,7 @@ export default function AehlBtcInfo() {
               <img
                 className='h-auto max-w-full object-contain aspect-[4/1]'
                 src="https://res.cloudinary.com/aehl/image/upload/v1732031089/GetItOnGooglePlay_Badge_Web_color_English_antwwp.png"
-                alt="Download on the App Store"
+                alt="Download on the Google Play"
               />
             </div>
           </div>
@@ -44,9 +45,20 @@ export default function AehlBtcInfo() {
           </p>
           <div className='flex justify-end'>
             <div className='p-2'>
-              <Button type="primary" shape="round" icon={<DoubleRightOutlined />} size="middle" iconPosition='end' className='capitalize'>
+              {/* <Button type="primary" shape="round" icon={<DoubleRightOutlined />} size="middle" iconPosition='end' className='capitalize'>
                 learn more
-              </Button>
+              </Button> */}
+              <Link href="/" className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-pink-700 transition duration-300 ease-out border-2 border-pink-700 rounded-full shadow-md group">
+                <span className="absolute inset-0 flex items-center justify-center w-full h-full text-pink-700 duration-300 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease">
+                  {/* <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg> */}
+                  {/* <DoubleRightOutlined /> */}
+                  <span className="material-symbols-outlined">
+                    keyboard_double_arrow_right
+                  </span>
+                </span>
+                <span className="absolute flex items-center justify-center w-full h-full text-pink-700 transition-all duration-300 transform group-hover:translate-x-full ease capitalize">learn more</span>
+                <span className="relative invisible capitalize">learn more</span>
+              </Link>
             </div>
           </div>
         </div>
