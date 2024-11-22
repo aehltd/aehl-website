@@ -1,13 +1,17 @@
 import React from "react"
-import Link from "next/link";
 
-import { Button } from "antd";
+import BlackButton from "../blackButton";
 
 export default function AehlKylinInfo() {
     return (
         <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
             <div>
-                <h1 className=" tracking-wider font-semibold">Our Vision</h1>
+                <h1 className=" tracking-wider font-semibold text-4xl">
+                    Our Vision
+                    <span className="material-symbols-outlined p-1">
+                        travel_explore
+                    </span>
+                </h1>
                 <p>
                     Livestreaming ecommerce is becoming mainstream, revolutionizing how
                     businesses reach and engage customers. We seamlessly connect
@@ -35,7 +39,12 @@ export default function AehlKylinInfo() {
                 />
             </div>
             <div>
-                <h1 className="mb-4 tracking-wider font-semibold">Our Business</h1>
+                <h1 className="mb-4 tracking-wider font-semibold text-4xl">
+                    Our Business
+                    <span className="material-symbols-outlined p-1">
+                        shop
+                    </span>
+                </h1>
                 <p>
                     Our integrated platform seamlessly connects businesses with a vast
                     network of broadcasters and influencers, unlocking new avenues for
@@ -46,11 +55,11 @@ export default function AehlKylinInfo() {
                     digital-savvy consumers.
                 </p>
                 <div className="flex justify-end p-5">
-                <Link href="/aehl-kylin/model" scroll = {false}>
-                    <Button color="primary" variant="outlined" size="middle">
-                        Learn More
-                    </Button>
-                </Link>
+                    {/* Button for Learn More */}
+                    <BlackButton
+                        text="Learn More"
+                        icon="read_more"
+                        url="/aehl-kylin/model" />
                 </div>
             </div>
         </div>

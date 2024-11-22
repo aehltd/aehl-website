@@ -1,13 +1,6 @@
 import React from 'react';
-import Link from "next/link";
 
-import {
-    AlertTwoTone,
-    AccountBookTwoTone,
-    DoubleRightOutlined
-} from '@ant-design/icons';
-
-import { Button } from "antd";
+import BlackButton from "../blackButton";
 
 export default function HomePageInfo() {
     return (
@@ -17,7 +10,7 @@ export default function HomePageInfo() {
                 <p className='font-sans text-lg'>“To provide exceptional value to our customers in growing and evolving business segments driven by our commitment, passion and world-class talent.”</p>
             </div>
             <div className='grid grid-cols-1 gap-0 md:col-span-2 col-span-4'>
-                <h2 className='flex font-bold md:text-3xl text-2xl items-center'>A New Energy Model <span className="material-symbols-outlined md:text-2xl text-xl p-1 text-pumpkin-300">
+                <h2 className='flex font-bold md:text-3xl text-2xl items-center pb-2'>A New Energy Model <span className="material-symbols-outlined md:text-2xl text-xl p-1 text-pumpkin-300">
                     electric_bolt
                 </span></h2>
                 <p className='px-4 md:p-0 p-4'>
@@ -27,11 +20,10 @@ export default function HomePageInfo() {
                     and cryptocurrency sectors.
                 </p>
                 <div className='flex justify-end'>
-                    <Link href="/aehl-us/corporate-overview" passHref>
-                        <Button className='bg-gradient-to-r from-dodger-blue-700 to-dodger-blue-400 text-white px-4 py-2 rounded' variant="link">
-                            Learn More <DoubleRightOutlined />
-                        </Button>
-                    </Link>
+                    <BlackButton
+                        text="Learn More"
+                        icon="read_more"
+                        url="/aehl-us/corporate-overview" />
                 </div>
             </div>
             <div className='md:col-span-2 col-span-4'>
@@ -50,8 +42,8 @@ export default function HomePageInfo() {
             </div>
             <div className='grid grid-cols-1 gap-0 md:col-span-2 col-span-4 md:order-2 order-1'>
                 <h2 className='font-bold md:text-3xl text-2xl'>The Livestreaming </h2>
-                <h2 className='flex items-center font-bold md:text-3xl text-2xl'>Ecommerce Frontier <span className="material-symbols-outlined md:text-2xl text-xl p-1 text-coral-red-500">
-                live_tv
+                <h2 className='flex items-center font-bold md:text-3xl text-2xl pb-2'>Ecommerce Frontier <span className="material-symbols-outlined md:text-2xl text-xl p-1 text-coral-red-500">
+                    live_tv
                 </span></h2>
                 <p className='px-4 md:p-0 p-4'>
                     Operating in China as Kylin Cloud, we aim to provide a
@@ -61,11 +53,10 @@ export default function HomePageInfo() {
                     revolution.
                 </p>
                 <div className='flex justify-end'>
-                    <Link href="/aehl-kylin/business-overview" passHref>
-                        <Button className='bg-gradient-to-r from-dodger-blue-700 to-dodger-blue-400 text-white px-4 py-2 rounded' variant="link">
-                            Learn More <DoubleRightOutlined />
-                        </Button>
-                    </Link>
+                    <BlackButton
+                        text="Learn More"
+                        icon="read_more"
+                        url="/aehl-kylin/business-overview" />
                 </div>
             </div>
         </div>
