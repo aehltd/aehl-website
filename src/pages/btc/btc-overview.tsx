@@ -8,14 +8,18 @@ import AehlBtcStatistic from "@/components/btc/aehlBtcStatistic";
 export default function btcOverview() {
     return (
         <div id="container" className="container">
-            <div className="xl:w-[120vh] w-full relative">
-                <AehlBtcBanner />
-            </div>
-            <div className="bg-black xl:w-[120vh] w-full flex justify-center">
-                <div className="row">
+            <div className="relative xl:w-[120vh] w-full">
+                <div className="bg-black w-full">
                     <AehlBtcPromote />
                 </div>
+                {/* <div className="relative z-0">
+                    <AehlBtcBanner />
+                </div>
+                <div className=" absolute inset-0 m-auto top-16 right-6 bg-transparent z-10 w-5/12">
+                    <AehlBtcPromote />
+                </div> */}
             </div>
+
             <div className="row">
                 <BtcInfo />
             </div>
