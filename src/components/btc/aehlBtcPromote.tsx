@@ -58,8 +58,9 @@ const videoInfo = [
 export default function AehlBtcPromote() {
     return (
         <div className="">
-        <Carousel autoplay infinite={true} autoplaySpeed={1250} effect='scrollx'>
+        <Carousel autoplay infinite={true} autoplaySpeed={1350} effect='scrollx'>
 
+            {/* templete */}
             {/* <div className='flex p-5'>
                 <div className='grid grid-cols-2'>
                     {videoInfo.slice(0, 2).map((videoInfo, index) => (
@@ -70,6 +71,7 @@ export default function AehlBtcPromote() {
                 </div>
             </div> */}
 
+            {/* Wiht the background and carousel on the right */}
             {/* {[...Array(6)].map((_, i) => (
                 <div key={i} className='flex justify-center'>
                     <div className='grid grid-cols-2'>
@@ -90,7 +92,7 @@ export default function AehlBtcPromote() {
                 <div key={i} className='flex flex-col justify-between items-center h-full'>
                     <div className='grid grid-cols-2'>
                         {videoInfo.slice(i * 2, i * 2 + 2).map((video, index) => (
-                            <div key={index} className="flex justify-center pt-5">
+                            <div key={index} className="flex justify-center md:pt-5 pt-2">
                                 <img className='w-4/5' alt={video.title} src={video.imageSrc} />
                             </div>
                         ))}
