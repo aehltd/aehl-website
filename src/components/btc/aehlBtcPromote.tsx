@@ -58,10 +58,10 @@ const videoInfo = [
 export default function AehlBtcPromote() {
     return (
         <div className="">
-        <Carousel autoplay infinite={true} autoplaySpeed={1350} effect='scrollx'>
+            <Carousel arrows autoplay infinite={true} autoplaySpeed={1350} effect='scrollx'>
 
-            {/* templete */}
-            {/* <div className='flex p-5'>
+                {/* templete */}
+                {/* <div className='flex p-5'>
                 <div className='grid grid-cols-2'>
                     {videoInfo.slice(0, 2).map((videoInfo, index) => (
                         <div key={index} className="flex justify-center pb-8">
@@ -71,8 +71,8 @@ export default function AehlBtcPromote() {
                 </div>
             </div> */}
 
-            {/* Wiht the background and carousel on the right */}
-            {/* {[...Array(6)].map((_, i) => (
+                {/* Wiht the background and carousel on the right */}
+                {/* {[...Array(6)].map((_, i) => (
                 <div key={i} className='flex justify-center'>
                     <div className='grid grid-cols-2'>
                         {videoInfo.slice(i * 2, i * 2 + 2).map((video, index) => (
@@ -84,35 +84,23 @@ export default function AehlBtcPromote() {
                 </div>
             ))} */}
 
-            <div>
-                <AehlBtcBanner />
-            </div>
-
-            {[...Array(6)].map((_, i) => (
-                <div key={i} className='flex flex-col justify-between items-center h-full'>
-                    <div className='grid grid-cols-2'>
-                        {videoInfo.slice(i * 2, i * 2 + 2).map((video, index) => (
-                            <div key={index} className="flex justify-center md:pt-5 pt-2">
-                                <img className='w-4/5' alt={video.title} src={video.imageSrc} />
-                            </div>
-                        ))}
-                    </div>
+                <div>
+                    <AehlBtcBanner />
                 </div>
-            ))}
 
-            {/* {[...Array(6)].map((_, i) => (
-                <div key={i} className='flex justify-center'>
-                    <div className='grid grid-cols-1'>
-                        {videoInfo.slice(i, i+1).map((video, index) => (
-                            <div key={index} className="flex justify-center pb-8">
-                                <img className='w-3/4' alt={video.title} src={video.imageSrc} />
-                            </div>
-                        ))}
+                {[...Array(6)].map((_, i) => (
+                    <div key={i} className='flex flex-col justify-between items-center h-ful '>
+                        <div className='grid grid-cols-2'>
+                                {videoInfo.slice(i * 2, i * 2 + 2).map((video, index) => (
+                                    <div key={index} className="flex justify-center md:pt-5 pt-2">
+                                        <img className='w-4/5' alt={video.title} src={video.imageSrc} />
+                                    </div>
+                                ))}
+                        </div>
                     </div>
-                </div>
-            ))} */}
+                ))}
 
-        </Carousel>
+            </Carousel>
         </div>
     );
 }

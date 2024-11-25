@@ -23,9 +23,9 @@ export default function btcOverview() {
             <div className="row">
                 <BtcInfo />
             </div>
-            <div className="row">
+            {/* <div className="row">
                 <AehlBtcStatistic />
-            </div>
+            </div> */}
             <div className="row">
                 <AehlBtcFeature />
             </div>
