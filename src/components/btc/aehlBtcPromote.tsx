@@ -89,13 +89,13 @@ export default function AehlBtcPromote() {
                 </div>
 
                 {[...Array(6)].map((_, i) => (
-                    <div key={i} className='flex flex-col justify-between items-center h-ful '>
+                    <div key={i} className="flex flex-col justify-between items-center h-full blur-2 bg-cover bg-center bg-[url('https://res.cloudinary.com/aehl/image/upload/v1732035393/IMG_4288_hvv2tt.png')]">
                         <div className='grid grid-cols-2'>
-                                {videoInfo.slice(i * 2, i * 2 + 2).map((video, index) => (
-                                    <div key={index} className="flex justify-center md:pt-5 pt-2">
-                                        <img className='w-4/5' alt={video.title} src={video.imageSrc} />
-                                    </div>
-                                ))}
+                            {videoInfo.slice(i * 2, i * 2 + 2).map((video, index) => (
+                                <div key={index} className="flex justify-center md:pt-5 pt-2">
+                                    <img className='w-4/5' alt={video.title} src={video.imageSrc} />
+                                </div>
+                            ))}
                         </div>
                     </div>
                 ))}

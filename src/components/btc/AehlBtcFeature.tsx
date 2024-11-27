@@ -10,7 +10,9 @@ export default function AehlBtcFeature() {
                     hoverable
                     cover={<img alt="example" src="https://res.cloudinary.com/aehl/image/upload/v1731381355/Banner7_elxdqw.png" />}
                 >
-                    <Meta title="Creative and Profit" description="But it’s not just about watching — it’s about creating, too. As a short film creator, you can make money while sharing your passion, with creative and profit opportunities designed to support your artistic journey.
+                    <Meta title="Creative and Profit" description="But it’s not just about watching — it’s about creating, too. As a short film creator, this platform offers you the chance to turn your passion into a source of income. 
+                    By showcasing your unique perspective and storytelling skills, you can connect with a global audience eager to discover fresh and original content. 
+                    Whether you're an emerging filmmaker or an established creator, the platform provides tools and resources to support your artistic journey.
 " />
                 </Card>
             </div>
