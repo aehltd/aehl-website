@@ -5,7 +5,7 @@ import HomePageBanner from "./banner/HomePageBanner";
 import AehlUsBanner from "./banner/AehlUsBanner";
 import AehlKylinBanner from "./banner/AehlKylinBanner";
 import AehlInvestorBanner from "./banner/AehlInvestorBanner";
-import AehlBtcBanner from "./banner/aehlBtcBanner";
+// import AehlBtcBanner from "./banner/aehlBtcBanner";
 
 import Link from "next/link";
 
@@ -67,7 +67,7 @@ export default function HomePageCarousel() {
         </div>
 
         {/* BTC Page */}
-        <div className="relative">
+        {/* <div className="relative">
           <Link href="/btc/btc-overview">
             <div className="blur-[4px]">
               <AehlBtcBanner />
@@ -81,7 +81,7 @@ export default function HomePageCarousel() {
               The World&apos;s Premier Platform for <span className="text-pink-500"> Short Drama</span>
             </p>
           </Link>
-        </div>
+        </div> */}
 
         {/* Our Value PAGE */}
         <div className="relative">
