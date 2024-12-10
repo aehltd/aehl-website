@@ -5,7 +5,7 @@ import HomePageBanner from "./banner/HomePageBanner";
 import AehlUsBanner from "./banner/AehlUsBanner";
 import AehlKylinBanner from "./banner/AehlKylinBanner";
 import AehlInvestorBanner from "./banner/AehlInvestorBanner";
-import AehlBtcBanner from "./banner/aehlBtcBanner";
+// import AehlBtcBanner from "./banner/aehlBtcBanner";
 
 import Link from "next/link";
 
