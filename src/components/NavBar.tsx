@@ -44,7 +44,7 @@ const items: MenuItem[] = [
       },
     ],
   },
-  { key: "/btc/btc-overview", label: <Link href="/btc/btc-overview">BtcShort</Link> },
+  // { key: "/btc/btc-overview", label: <Link href="/btc/btc-overview">BtcShort</Link> },
   { key: "/ir", label: <Link href="/ir/our_values">Investors</Link> },
   { key: "/contact-us", label: <Link href="/contact-us">Contact Us</Link> },
 ];
