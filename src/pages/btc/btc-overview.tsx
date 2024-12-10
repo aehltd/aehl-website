@@ -1,5 +1,5 @@
 import BtcInfo from "../../components/btc/aehlBtcInfo"
-import AehlBtcBanner from "@/components/banner/aehlBtcBanner";
+import AehlBtcBanner from "@/components/banner/AehlBtcBanner";
 import AehlBtcPromote from "@/components/btc/aehlBtcPromote";
 import AehlBtcFeature from "@/components/btc/aehlBtcFeature";
 import AehlBtcStatistic from "@/components/btc/aehlBtcStatistic";

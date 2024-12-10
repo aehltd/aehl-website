@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'antd';
 
-import AehlBtcBanner from "../../components/banner/aehlBtcBanner";
+import AehlBtcBanner from "../banner/AehlBtcBanner";
 // 
 const videoInfo = [
     {
