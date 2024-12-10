@@ -1,4 +1,4 @@
-import Checkout from "@/components/bond/Checkout";
+import Checkout from "@/components/atmBond/Checkout";
 
 import React, { useState } from "react";
 import Link from "next/link";

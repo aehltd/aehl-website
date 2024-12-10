@@ -3,7 +3,9 @@ import AehlInvestorBanner from "../../components/banner/AehlInvestorBanner";
 export default function IROverview() {
   return (
     <div id="container" className="container">
-      <AehlInvestorBanner/>
+      <div className="xl:w-[120vh] w-full pb-10">
+        <AehlInvestorBanner />
+      </div>
 
       <div className="w-full">
         <p className="text-xxs text-end px-3">

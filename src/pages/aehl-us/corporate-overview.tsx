@@ -3,10 +3,16 @@ import AehlUsBanner from "../../components/banner/AehlUsBanner";
 export default function USOverview() {
   return (
     <div id="container" className="container">
-      <AehlUsBanner />
+      <div className="xl:w-[120vh] w-full pb-10">
+        <AehlUsBanner />
+      </div>
+
+      
 
       <div className="flex row flex-col">
-        <h1 className="mb-4 tracking-wider font-bold">Vision & Mission</h1>
+        <h1 className="mb-4 tracking-wider font-bold text-4xl flex items-center">Vision & Mission <span className="material-symbols-outlined text-4xl p-2">
+          model_training
+        </span> </h1>
         <div className="flex w-full flex-col-reverse md:flex-row">
           <div className="w-full md:w-1/2 flex flex-col space-y-2">
             <div>

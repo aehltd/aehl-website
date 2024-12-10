@@ -32,6 +32,11 @@ const config: Config = {
       'sky': '#93DEFF',
       "ahel-red": '#F5004F',
       "darkBlue": '#4F98CA',
+      pink: {
+        300: '#ff90c1',
+        500: '#ff61a6',
+        700: '#e8488a',
+      },
       gray: {
           50: '#f9fafb',
           100: '#f3f4f6',
@@ -57,7 +62,46 @@ const config: Config = {
           800: '#212529',
           900: '#121416',
         },
-
+        'dodger-blue': {
+          '50': '#F2FCFF', 
+          '100': '#E6F9FF', 
+          '200': '#BFEEFF', 
+          '300': '#99E0FF', 
+          '400': '#4DC1FF', 
+          '500': '#0096FF', 
+          '600': '#007EE6', 
+          '700': '#0063BF', 
+          '800': '#004799', 
+          '900': '#003073', 
+          '950': '#001C4A'
+        },
+        'pumpkin': {
+        '50': '#fff4ed',
+        '100': '#ffe6d5',
+        '200': '#feccaa',
+        '300': '#fdac74',
+        '400': '#fb8a3c',
+        '500': '#f97316',
+        '600': '#ea670c',
+        '700': '#c2570c',
+        '800': '#9a4a12',
+        '900': '#7c3d12',
+        '950': '#432007',
+        },
+        'coral-red': {
+        '50': '#fff1f1',
+        '100': '#ffdfdf',
+        '200': '#ffc5c5',
+        '300': '#ff9d9d',
+        '400': '#ff6464',
+        '500': '#ff4545',
+        '600': '#ed1515',
+        '700': '#c80d0d',
+        '800': '#a50f0f',
+        '900': '#881414',
+        '950': '#4b0404',
+    },
+    
     },
     extend: {
       screens: {
@@ -78,6 +122,7 @@ const config: Config = {
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+        goldman: ['Goldman', 'sans-serif'],
       },
       backgroundImage: {
         "custom-gradient":
