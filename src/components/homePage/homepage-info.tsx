@@ -1,6 +1,7 @@
 import React from 'react';
+import Link from 'next/link'
 
-import BlackButton from "../BlackButton";
+import { Button } from "antd";
 
 export default function HomePageInfo() {
     return (
@@ -20,10 +21,11 @@ export default function HomePageInfo() {
                     and cryptocurrency sectors.
                 </p>
                 <div className='flex justify-end'>
-                    <BlackButton
-                        text="Learn More"
-                        icon="read_more"
-                        url="/aehl-us/corporate-overview" />
+                    <Link href="/aehl-us/corporate-overview">
+                        <Button color="primary" variant="solid">
+                            Learn More
+                        </Button>
+                    </Link>
                 </div>
             </div>
             <div className='md:col-span-2 col-span-4'>
@@ -53,10 +55,11 @@ export default function HomePageInfo() {
                     revolution.
                 </p>
                 <div className='flex justify-end'>
-                    <BlackButton
-                        text="Learn More"
-                        icon="read_more"
-                        url="/aehl-kylin/business-overview" />
+                    <Link href="/aehl-kylin/business-overview">
+                        <Button color="primary" variant="solid">
+                            Learn More
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -1,6 +1,8 @@
 import React from "react"
 
-// import BlackButton from "../BlackButton"
+import Link from 'next/link'
+
+import { Button } from "antd";
 
 export default function AehlKylinInfo() {
     return (
@@ -56,10 +58,11 @@ export default function AehlKylinInfo() {
                 </p>
                 <div className="flex justify-end p-5">
                     {/* Button for Learn More */}
-                    {/* <BlackButton
-                        text="Learn More"
-                        icon="read_more"
-                        url="/aehl-kylin/model" /> */}
+                    <Link href="/aehl-kylin/model">
+                        <Button color="primary" variant="solid">
+                            Learn More
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </div>
