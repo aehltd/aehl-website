@@ -1,6 +1,6 @@
 import React from "react"
 
-import BlackButton from "../BlackButton";
+import BlackButton from "../BlackButton"
 
 export default function AehlKylinInfo() {
     return (

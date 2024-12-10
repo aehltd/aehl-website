@@ -75,15 +75,6 @@ const board: BoardEntry[] = [
     linkedin: "",
   },
   {
-    name: "Houyou Zhang",
-    position: "Board Member",
-    description:
-      "Mr. Houyou Zhang has been a director of YiXiang International LLC since March 2023, where he secures projects for investment and conducted due diligence. From May 2017 to October 2022, Mr. Zhang was the chairman of Shanghai KKM Asset Management Co., Ltd., a firm that he founded and where he was engaged in investment and asset management. Mr. Zhang is experienced in quantitative trading in China with 20 years of experience in the finance industry, and he has published widely on finance and investments. Mr. Zhang received a Bachelor’s degree in Engineering from Sichuan University in 2002.",
-    image:
-      "https://res.cloudinary.com/aehl/image/upload/v1724429464/Image_20240618105142_spfcnp.jpg",
-    linkedin: "",
-  },
-  {
     name: "Xiaoying Song",
     position: "Board Member",
     description:
