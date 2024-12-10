@@ -56,10 +56,10 @@ export default function AehlKylinInfo() {
                 </p>
                 <div className="flex justify-end p-5">
                     {/* Button for Learn More */}
-                    <BlackButton
+                    {/* <BlackButton
                         text="Learn More"
                         icon="read_more"
-                        url="/aehl-kylin/model" />
+                        url="/aehl-kylin/model" /> */}
                 </div>
             </div>
         </div>
