@@ -1,6 +1,3 @@
-import { Button } from "antd";
-import Link from "next/link";
-
 import AehlKylinBanner from "@/components/banner/AehlKylinBanner";
 import AehlKylinStatistic from "@/components/aehlKylin/aehlKylinStatistic";
 import AehlKylinInfo from "@/components/aehlKylin/aehlKylinInfo";
