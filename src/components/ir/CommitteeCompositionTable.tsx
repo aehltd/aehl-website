@@ -53,11 +53,6 @@ const Committee: CommitteeItem[] = [
   },
   {
     honorific: "Mr.",
-    name: "Houyou Zhang",
-    position: "Director",
-  },
-  {
-    honorific: "Mr.",
     name: "Junjie Dong",
     position: "Director & Corp. Secretary",
   },
