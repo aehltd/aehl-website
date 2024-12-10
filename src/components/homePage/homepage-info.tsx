@@ -1,6 +1,6 @@
 import React from 'react';
 
-import BlackButton from "../blackButton";
+import BlackButton from "../BlackButton";
 
 export default function HomePageInfo() {
     return (
