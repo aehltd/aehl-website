@@ -1,8 +1,7 @@
 import React from 'react';
-import { Carousel, Card } from 'antd';
+import { Carousel } from 'antd';
 
-import AehlBtcBanner from "@/components/banner/aehlBtcBanner";
-
+import AehlBtcBanner from "../../components/banner/aehlBtcBanner";
 // 
 const videoInfo = [
     {
