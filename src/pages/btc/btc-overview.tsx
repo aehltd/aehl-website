@@ -1,8 +1,8 @@
-import BtcInfo from "../../components/btc/aehlBtcInfo"
+import BtcInfo from "../../components/btc/AehlBtcInfo"
 import AehlBtcBanner from "@/components/banner/AehlBtcBanner";
-import AehlBtcPromote from "@/components/btc/aehlBtcPromote";
-import AehlBtcFeature from "@/components/btc/aehlBtcFeature";
-import AehlBtcStatistic from "@/components/btc/aehlBtcStatistic";
+import AehlBtcPromote from "@/components/btc/AehlBtcPromote";
+import AehlBtcFeature from "@/components/btc/AehlBtcFeature";
+import AehlBtcStatistic from "@/components/btc/AehlBtcStatistic";
 
 
 export default function btcOverview() {
