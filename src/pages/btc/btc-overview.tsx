@@ -6,6 +6,7 @@
 
 import React from "react";
 
+import AehlBtcPromote from "../../components/btc/AehlBtcPromote";
 import BtcInfo from "../../components/btc/AehlBtcInfo"
 import AehlBtcFeature from "../../components/btc/AehlBtcFeature"
 
@@ -13,11 +14,11 @@ import AehlBtcFeature from "../../components/btc/AehlBtcFeature"
 export default function btcOverview() {
     return (
         <div id="container" className="container">
-            {/* <div className="relative xl:w-[120vh] w-full">
+            <div className="relative xl:w-[120vh] w-full">
                 <div className="bg-black w-full">
                     <AehlBtcPromote />
                 </div>
-            </div> */}
+            </div>
 
             <div className="row">
                 <BtcInfo />

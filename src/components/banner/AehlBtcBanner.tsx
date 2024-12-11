@@ -1,8 +1,4 @@
 import React from 'react';
-import { Button, Typography, Image } from 'antd';
-import {
-  DownloadOutlined
-} from '@ant-design/icons';
 
 export default function AehlBtcBanner() {
   return (
