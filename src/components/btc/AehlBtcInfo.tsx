@@ -48,7 +48,7 @@ export default function AehlBtcInfo() {
               {/* <Button type="primary" shape="round" icon={<DoubleRightOutlined />} size="middle" iconPosition='end' className='capitalize'>
                 learn more
               </Button> */}
-              <Link href="/" className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-pink-700 transition duration-300 ease-out border-2 border-pink-700 rounded-full shadow-md group">
+              <Link href="/btc/btc/btc" className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-pink-700 transition duration-300 ease-out border-2 border-pink-700 rounded-full shadow-md group">
                 <span className="absolute inset-0 flex items-center justify-center w-full h-full text-pink-700 duration-300 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease">
                   <span className="material-symbols-outlined">
                     keyboard_double_arrow_right
