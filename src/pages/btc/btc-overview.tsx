@@ -6,9 +6,10 @@
 
 import React from "react";
 
-import AehlBtcPromote from "../../components/btc/AehlBtcPromote";
+
 import BtcInfo from "../../components/btc/AehlBtcInfo"
 import AehlBtcFeature from "../../components/btc/AehlBtcFeature"
+import AehlBtcPromote from "../../components/btc/AehlBtcPromote"
 
 
 export default function btcOverview() {
