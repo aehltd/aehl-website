@@ -1,12 +1,6 @@
 import React from 'react';
 import { Button, Typography, Image } from 'antd';
 import Link from "next/link";
-import {
-  DownloadOutlined,
-  DoubleRightOutlined,
-  AppleOutlined,
-  AndroidOutlined
-} from '@ant-design/icons';
 
 export default function AehlBtcInfo() {
   return (
