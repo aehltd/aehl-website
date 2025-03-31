@@ -56,13 +56,22 @@ const board: BoardEntry[] = [
       "https://res.cloudinary.com/aehl/image/upload/v1724428446/tingting-zhang.jpg_mbwhp1.png",
     linkedin: "",
   },
+  // {
+  //   name: "Dian Zhang",
+  //   position: "Board Member",
+  //   description:
+  //     "Mr. Dian Zhang joined our Board in November 2022. Mr. Dian Zhang is currently Chief Financial Officer of Baiya International Group Inc., an SaaS (software as a service) platform company in China. Previously, Mr. Zhang worked at Eaton Square from 2014 to 2020, an M&A advisory firm, where he was responsible for investments in new ventures and their financing in the Chinese market. Previous to that, Mr. Zhang worked at the Chengdu branch of ShineWing Certified Public Accountants from 2009 to 2013 where his responsibilities included the auditing of annual reports of publicly listed companies and due diligence for IPO projects. Mr. Zhang holds a Bachelor’s degree in Management Accounting from Aston University, a Master’s degree in Banking and Finance from Monash University, and a Master’s degree in Financial Management from the Australian National University.",
+  //   image:
+  //     "https://res.cloudinary.com/aehl/image/upload/v1724428442/dian-zhang_omdytk.png",
+  //   linkedin: "",
+  // },
   {
-    name: "Dian Zhang",
+    name: "Ze Yang",
     position: "Board Member",
     description:
-      "Mr. Dian Zhang joined our Board in November 2022. Mr. Dian Zhang is currently Chief Financial Officer of Baiya International Group Inc., an SaaS (software as a service) platform company in China. Previously, Mr. Zhang worked at Eaton Square from 2014 to 2020, an M&A advisory firm, where he was responsible for investments in new ventures and their financing in the Chinese market. Previous to that, Mr. Zhang worked at the Chengdu branch of ShineWing Certified Public Accountants from 2009 to 2013 where his responsibilities included the auditing of annual reports of publicly listed companies and due diligence for IPO projects. Mr. Zhang holds a Bachelor’s degree in Management Accounting from Aston University, a Master’s degree in Banking and Finance from Monash University, and a Master’s degree in Financial Management from the Australian National University.",
+      "Ms. Ze Yang is currently the Finance Director and Chief Operating Officer of Sichuan Yixiaobao Network Technology Co., Ltd, an investment company engaged in cross-border e-commerce businesses, where she manages a team of over 50 people, develops growth strategies and optimizes business operations. Ms. Yang has held this position since March 2021. From December 2016 to January 2021, Ms. Yang served as the Marketing Director of at Top Guagua Technology Group Co., Ltd, a platform that provides one-stop services for enterprises, covering areas such as business registration, financial and tax agency, intellectual property, legal services, qualification processing and entrepreneurial incubation. From March 2011 to November 2016, Ms. Yang worked as a manager at Chengdu Yidai Network Financial Information Service Co., Ltd, an online lending information intermediary service company. From March 2009 to February 2011, Ms. Yang worked as a store manager at Chengdu Orchid Grass Co., Ltd, a flower store. Ms. Yang has an associate degree in computerized auditing from Sichuan Tianyi College.",
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1724428442/dian-zhang_omdytk.png",
+      "https://res.cloudinary.com/aehl/image/upload/v1743430692/blank-profile-picture-973460_1920_ajetm5.png",
     linkedin: "",
   },
   {

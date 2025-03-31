@@ -43,10 +43,18 @@ const Committee: CommitteeItem[] = [
     compensationCommittee: "M",
     nominatingCommittee: "M",
   },
-  {
-    honorific: "Mr.",
-    name: "Dian Zhang",
-    position: "Independent Director",
+  // {
+  //   honorific: "Mr.",
+  //   name: "Dian Zhang",
+  //   position: "Independent Director",
+  //   auditCommittee: "C",
+  //   compensationCommittee: "M",
+  //   nominatingCommittee: "M",
+  // },
+    {
+    honorific: "Ms.",
+    name: "Ze Yang",
+    position: "Director",
     auditCommittee: "C",
     compensationCommittee: "M",
     nominatingCommittee: "M",
