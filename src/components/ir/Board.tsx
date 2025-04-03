@@ -71,7 +71,7 @@ const board: BoardEntry[] = [
     description:
       "Ms. Ze Yang is currently the Finance Director and Chief Operating Officer of Sichuan Yixiaobao Network Technology Co., Ltd, an investment company engaged in cross-border e-commerce businesses, where she manages a team of over 50 people, develops growth strategies and optimizes business operations. Ms. Yang has held this position since March 2021. From December 2016 to January 2021, Ms. Yang served as the Marketing Director of at Top Guagua Technology Group Co., Ltd, a platform that provides one-stop services for enterprises, covering areas such as business registration, financial and tax agency, intellectual property, legal services, qualification processing and entrepreneurial incubation. From March 2011 to November 2016, Ms. Yang worked as a manager at Chengdu Yidai Network Financial Information Service Co., Ltd, an online lending information intermediary service company. From March 2009 to February 2011, Ms. Yang worked as a store manager at Chengdu Orchid Grass Co., Ltd, a flower store. Ms. Yang has an associate degree in computerized auditing from Sichuan Tianyi College.",
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1743607042/Untitled_design_1_oa4qkc.png",
+      "https://res.cloudinary.com/aehl/image/upload/v1743687900/Ye_Zang_Photo_Edit_1_h60b2t.jpg",
     linkedin: "",
   },
   {
