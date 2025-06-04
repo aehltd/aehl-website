@@ -10,7 +10,7 @@ const presentations: presentationItem[] = [
   {
     date: "06/01/2024",
     name: "AEHL Company Presentation June 2025",
-    url: "https://res.cloudinary.com/aehl/image/upload/v1749047430/2025_pdfhandler_s42yjb.pdf",
+    url: "https://res.cloudinary.com/aehl/image/upload/v1749052716/pdfhandler21_dxravr.pdf",
     
   },
 ];
