@@ -8,9 +8,9 @@ type presentationItem = {
 };
 const presentations: presentationItem[] = [
   {
-    date: "10/9/2024",
-    name: "AEHL Company Presentation October 2024",
-    url: "https://res.cloudinary.com/aehl/image/upload/v1731007167/071124_-_AEHL_Company_Presentation_Oct._2024_Final_ycp3uv.pdf",
+    date: "06/01/2024",
+    name: "AEHL Company Presentation June 2025",
+    url: "https://res.cloudinary.com/aehl/image/upload/v1749047430/2025_pdfhandler_s42yjb.pdf",
     
   },
 ];
