@@ -48,7 +48,7 @@ const FAQ: FAQItem[] = [
   {
     question: "Who is Antelope Enterprise's transfer agent?",
     answer:
-      "Equiniti Limited, 1110 Centre Pointe Curve, Mendota Heights, MN 55120. To contact call 800-937—5449 or 718-921-8157.",
+      "Transhare, Bayside Center 1, 17755 US Highway 19 N, Suite 140, Clearwater FL 33764. To contact, call 303-662-1112.",
   },
   {
     question: "Who is Antelope Enterprise’s legal counsel?",
