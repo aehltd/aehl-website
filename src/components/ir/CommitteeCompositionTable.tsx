@@ -19,22 +19,22 @@ const Committee: CommitteeItem[] = [
     name: "Ishak Han",
     position: "Chairman",
     auditCommittee: "M",
-    compensationCommittee: "M",
-    nominatingCommittee: "M",
+    compensationCommittee: "C",
+    nominatingCommittee: "C",
   },
   {
     honorific: "Ms.",
     name: "Tingting Zhang",
     position: "Director",
   },
-  {
-    honorific: "Ms.",
-    name: "Huashu Yuan",
-    position: "Independent Director",
-    auditCommittee: "M",
-    compensationCommittee: "C",
-    nominatingCommittee: "C",
-  },
+  // {
+  //   honorific: "Ms.",
+  //   name: "Huashu Yuan",
+  //   position: "Independent Director",
+  //   auditCommittee: "M",
+  //   compensationCommittee: "C",
+  //   nominatingCommittee: "C",
+  // },
   {
     honorific: "Mr.",
     name: "Song Chungen",
@@ -51,7 +51,7 @@ const Committee: CommitteeItem[] = [
   //   compensationCommittee: "M",
   //   nominatingCommittee: "M",
   // },
-    {
+  {
     honorific: "Ms.",
     name: "Ze Yang",
     position: "Director",

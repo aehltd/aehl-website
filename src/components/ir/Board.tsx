@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { Avatar, Card } from "antd";
-import {
-  UpOutlined,
-  DownOutlined,
-} from "@ant-design/icons";
+import { UpOutlined, DownOutlined } from "@ant-design/icons";
 import { Switch, Typography } from "antd";
 
 const { Paragraph, Text } = Typography;
@@ -74,13 +71,23 @@ const board: BoardEntry[] = [
       "https://res.cloudinary.com/aehl/image/upload/v1743687900/Ye_Zang_Photo_Edit_1_h60b2t.jpg",
     linkedin: "",
   },
+  // {
+  //   name: "Huashu Yuan",
+  //   position: "Board Member",
+  //   description:
+  //     "Ms. Huashu Yuan joined our Board in March 2023. Ms. Yuan has been the marketing specialist of Vesta living corp. since March 2022. Ms. Yuan served as an outside consultant providing marketing advice to the Company from June 2021 to February 2023. Ms. Yuan served as the marketing manager for American Tianfu-Wenhui Publishing Company from March 2021 to February 2022. Ms. Yuan worked at Strands Haircare Inc. as a social media intern from October 2020 to February 2021. Ms. Yuan obtained her Master’s degree in Emerging Media Studies from Boston University in 2020 and obtained her Bachelor’s degree in Communication Science and Rhetoric Studies from University of Wisconsin-Madison in 2019.",
+  //   image:
+  //     "https://res.cloudinary.com/aehl/image/upload/v1724428441/huashu-yuan_tdkfdp.png",
+  //   linkedin: "",
+  // },
+
   {
-    name: "Huashu Yuan",
+    name: "Cong Zhang",
     position: "Board Member",
     description:
-      "Ms. Huashu Yuan joined our Board in March 2023. Ms. Yuan has been the marketing specialist of Vesta living corp. since March 2022. Ms. Yuan served as an outside consultant providing marketing advice to the Company from June 2021 to February 2023. Ms. Yuan served as the marketing manager for American Tianfu-Wenhui Publishing Company from March 2021 to February 2022. Ms. Yuan worked at Strands Haircare Inc. as a social media intern from October 2020 to February 2021. Ms. Yuan obtained her Master’s degree in Emerging Media Studies from Boston University in 2020 and obtained her Bachelor’s degree in Communication Science and Rhetoric Studies from University of Wisconsin-Madison in 2019.",
+      "Mr. Cong Zhang joined our Board in August 2025. Mr. Zhang served as Vice President of Business at Sichuan Jindouyun Law Firm from 2023 to 2025, overseeing the firm’s business expansion. Prior to this, Mr. Zhang served as Project Director at Anhui Fengtai Environmental Technology Co., Ltd., from 2019 to 2022, where he innovated project management models and promoted the implementation of EPC + O models. Mr. Zhang served as the Operations Manager at Chongqing Huaxun Business Information Consulting Co., Ltd., from 2016 to 2018, where he standardized operations and optimized business processes. Mr. Zhang holds a Bachelor’s degree in Engineering Management from Chongqing Technology and Business University.",
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1724428441/huashu-yuan_tdkfdp.png",
+      "https://res.cloudinary.com/aehl/image/upload/v1754416890/Screenshot_2025-08-05_at_2.00.53_PM_i3ogkl.png",
     linkedin: "",
   },
   {
@@ -117,11 +124,7 @@ export default function BoardRow() {
       {board.map((entry, index) => {
         return (
           <div key={index}>
-            <Card
-              hoverable
-              bordered={true}
-              className="shadow-xl"
-            >
+            <Card hoverable bordered={true} className="shadow-xl">
               <Meta
                 className="items-center"
                 avatar={
@@ -141,8 +144,9 @@ export default function BoardRow() {
                 description={entry.position}
               />
               <div
-                className={`p-5 overflow-hidden transition-all duration-500 ease-in-out ${ellipsis[index] ? "max-h-[180px]" : "max-h-[1500px]"
-                  }`}
+                className={`p-5 overflow-hidden transition-all duration-500 ease-in-out ${
+                  ellipsis[index] ? "max-h-[180px]" : "max-h-[1500px]"
+                }`}
               >
                 <Paragraph className="transition-all duration-500 ease-in-out">
                   {entry.description}

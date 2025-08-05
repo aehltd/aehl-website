@@ -20,8 +20,8 @@ type GenderDataType = {
 };
 
 const GenderData: GenderDataType = {
-  numFemale: 3,
-  numMale: 4,
+  numFemale: 2,
+  numMale: 5,
   numNonBinary: 0,
   numNotDisclosed: 0,
 };
