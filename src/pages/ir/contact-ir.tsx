@@ -15,16 +15,16 @@ export default function IRContact() {
             representative:
           </h2>
           <div>
-            <h1 className="font-bold tracking-wide text-3xl">David Rutnick</h1>
-            <p>Precept Investor Relations LLC</p>
+            <h1 className="font-bold tracking-wide text-3xl">Janice Wang</h1>
+            <p>Investor Relations Inc.</p>
           </div>
           <div>
             <h3 className="">Phone:</h3>
-            <p>+1 (646) 694 - 8538</p>
+            <p>+1 (646) 283 - 9214</p>
           </div>
           <div>
             <h3>Email:</h3>
-            <p>david.rutnick@preceptir.com</p>
+            <p>services@wealthfsllc.com</p>
           </div>
       </div>
 
