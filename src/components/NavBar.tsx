@@ -6,10 +6,21 @@ import Link from "next/link";
 type MenuItem = Required<MenuProps>["items"][number];
 
 const items: MenuItem[] = [
-  { key: "/", label: <Link className="flex md:hidden" href="/">Home</Link> },
+  {
+    key: "/",
+    label: (
+      <Link className="flex md:hidden" href="/">
+        Home
+      </Link>
+    ),
+  },
   {
     key: "/aehl-us/",
-    label: <Link href="/aehl-us/corporate-overview" className="hover:text-black">AEHL US</Link>,
+    label: (
+      <Link href="/aehl-us/corporate-overview" className="hover:text-black">
+        AEHL US
+      </Link>
+    ),
     children: [
       {
         key: "/aehl-us/overview",
@@ -23,6 +34,10 @@ const items: MenuItem[] = [
         key: "/aehl-us/products",
         label: <Link href="/aehl-us/products">Our Products</Link>,
       },
+      {
+        key: "/aehl-us/career",
+        label: <Link href="/aehl-us/career">Career</Link>,
+      },
       // {
       //   key: "/aehl-us/metrics",
       //   label: <Link href="/aehl-us/metrics">Real Time Metrics</Link>,
@@ -32,7 +47,11 @@ const items: MenuItem[] = [
   },
   {
     key: "aehl-kylin",
-    label: <Link href="/aehl-kylin/business-overview" className="hover:text-black">Kylin Cloud</Link>,
+    label: (
+      <Link href="/aehl-kylin/business-overview" className="hover:text-black">
+        Kylin Cloud
+      </Link>
+    ),
     children: [
       {
         key: "/aehl-kylin/overview",
@@ -73,18 +92,20 @@ export default function NavBar({
       <div className="flex row p-0 h-14 justify-between">
         <div className="flex items-center pl-4 py-2">
           <Link href="/">
-          <img
-            src="https://res.cloudinary.com/aehl/image/upload/v1724428463/%E5%B0%8F%E9%BB%91%E8%89%B2.jpg_dsu0fh.png"
-            alt="logo"
-            className="h-45 w-45"
-          />
+            <img
+              src="https://res.cloudinary.com/aehl/image/upload/v1724428463/%E5%B0%8F%E9%BB%91%E8%89%B2.jpg_dsu0fh.png"
+              alt="logo"
+              className="h-45 w-45"
+            />
           </Link>
         </div>
         <div className="md:hidden items-center flex">
-          <h1 className="text-midnight text-sm font-semibold tracking-wide">Antelope Enterprise Holdings Limited</h1>
+          <h1 className="text-midnight text-sm font-semibold tracking-wide">
+            Antelope Enterprise Holdings Limited
+          </h1>
         </div>
         <div className="md:hidden">
-          <MenuOutlined className="h-full pr-4" onClick={openDrawer}/>
+          <MenuOutlined className="h-full pr-4" onClick={openDrawer} />
         </div>
 
         <div className="hidden md:flex">
