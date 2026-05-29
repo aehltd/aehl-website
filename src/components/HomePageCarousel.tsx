@@ -22,7 +22,7 @@ export default function HomePageCarousel() {
             </div>
             <img
               className="absolute inset-0 m-auto w-1/2"
-              src="https://res.cloudinary.com/aehl/image/upload/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
+              src="https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_800,c_limit/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
               alt="AEHL US"
             />
             <p className="absolute inset-x-0 top-[70%] font-goldman text-center text-sm md:text-3xl font-semibold text-white">
@@ -39,7 +39,7 @@ export default function HomePageCarousel() {
             </div>
             <img
               className="absolute inset-0 m-auto w-1/2"
-              src="https://res.cloudinary.com/aehl/image/upload/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
+              src="https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_800,c_limit/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
               alt="AEHL US"
             />
             <p className="absolute inset-x-0 top-[70%] text-center text-sm md:text-3xl font-semibold font-goldman text-white">
@@ -57,7 +57,7 @@ export default function HomePageCarousel() {
             </div>
             <img
               className="absolute inset-0 m-auto w-1/2"
-              src="https://res.cloudinary.com/aehl/image/upload/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
+              src="https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_800,c_limit/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
               alt="AEHL US"
             />
             <p className="absolute inset-x-0 top-[70%] text-center text-sm md:text-3xl font-semibold font-goldman text-white">
@@ -74,7 +74,7 @@ export default function HomePageCarousel() {
             </div>
             <img
               className="absolute inset-0 m-auto w-1/2"
-              src="https://res.cloudinary.com/aehl/image/upload/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
+              src="https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_800,c_limit/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
               alt="AEHL US"
             />
             <p className="absolute inset-x-0 top-[70%] text-center text-sm md:text-3xl font-semibold font-goldman text-white">
@@ -91,7 +91,7 @@ export default function HomePageCarousel() {
             </div>
             <img
               className="absolute inset-0 m-auto w-1/2"
-              src="https://res.cloudinary.com/aehl/image/upload/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
+              src="https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_800,c_limit/v1724428464/%E5%A4%A7%E7%99%BD%E8%89%B2.jpg_voicgv.png"
               alt="AEHL US"
             />
             <p className="absolute inset-x-0 top-[70%] text-center text-sm md:text-3xl font-semibold font-goldman text-white">

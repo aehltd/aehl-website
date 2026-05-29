@@ -32,7 +32,7 @@ const board: BoardEntry[] = [
     description:
       "Mr. Ishak Han joined our Board in November 2022. Mr. Han is the General Manager of Shenzhen Baisifu Industrial Co., Ltd., which engages in property management and leasing, management services for catering businesses, and enterprise management consulting. Having founded the firm in 2017, Mr. Han developed Shenzhen Baisifu Industrial Co., Ltd.’s marketing strategy, management policies, financial budgeting, and corporate planning activities. From 2011 to 2016, Mr. Han was the General Manager of Shenzhen Baisi Technology Co., Ltd. which engages in the development of self-service website application systems, the training and development of online ventures, online marketing training, and e-commerce product consignments. As the founder of Shenzhen Baisi Technology Co., Ltd., Mr. Han oversaw its financial budgeting and corporate planning functions, and was responsible for its overall marketing strategy. Mr. Han graduated with a higher degree diploma in marketing from Guangdong Open University in 2021.",
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1724428442/ishak-han_eolqsr.png",
+      "https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_200,c_limit/v1724428442/ishak-han_eolqsr.png",
     linkedin: "",
   },
   {
@@ -41,7 +41,7 @@ const board: BoardEntry[] = [
     description:
       "Mr. Chungen Song joined our Board in November 2019 as an independent member of the Board as well as a member of Audit, Compensation and Nominating Committees, to fill the vacancy following Liu Jun’s resignation. From 2009 to present, Song Chungen has been a practicing lawyer at Guangdong Weihao Law firm. He obtained his law license in May 2003, and in November 2009, he obtained Securities Qualification in China. Song Chungen holds a Bachelor’s degree in Law from Sun Yat Sen University (2007).",
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1724428447/chungen-song_pzyogy.png",
+      "https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_200,c_limit/v1724428447/chungen-song_pzyogy.png",
     linkedin: "",
   },
   {
@@ -50,7 +50,7 @@ const board: BoardEntry[] = [
     description:
       "Ms. Tingting Zhang joined our Board in October 2022. Ms. Zhang joined China Mobile’s digital content subsidiary Migo Co Ltd in 2021 at its Xiamen headquarters as the manager of its post-production department. Her current responsibilities include video production of programs including the 2022 Winter Olympics, the Golden Rooster Award and other large-scale China award productions. Previous to that, from 2018 to 2021, Ms. Zhang worked as a multimedia designer at 4399 Networks Ltd., where she was responsible for media productions. Ms. Zhang graduated with a Bachelor’s degree in Design from Asia University Taiwan.",
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1724428446/tingting-zhang.jpg_mbwhp1.png",
+      "https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_200,c_limit/v1724428446/tingting-zhang.jpg_mbwhp1.png",
     linkedin: "",
   },
   // {
@@ -68,7 +68,7 @@ const board: BoardEntry[] = [
     description:
       "Ms. Ze Yang is currently the Finance Director and Chief Operating Officer of Sichuan Yixiaobao Network Technology Co., Ltd, an investment company engaged in cross-border e-commerce businesses, where she manages a team of over 50 people, develops growth strategies and optimizes business operations. Ms. Yang has held this position since March 2021. From December 2016 to January 2021, Ms. Yang served as the Marketing Director of at Top Guagua Technology Group Co., Ltd, a platform that provides one-stop services for enterprises, covering areas such as business registration, financial and tax agency, intellectual property, legal services, qualification processing and entrepreneurial incubation. From March 2011 to November 2016, Ms. Yang worked as a manager at Chengdu Yidai Network Financial Information Service Co., Ltd, an online lending information intermediary service company. From March 2009 to February 2011, Ms. Yang worked as a store manager at Chengdu Orchid Grass Co., Ltd, a flower store. Ms. Yang has an associate degree in computerized auditing from Sichuan Tianyi College.",
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1743687900/Ye_Zang_Photo_Edit_1_h60b2t.jpg",
+      "https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_200,c_limit/v1743687900/Ye_Zang_Photo_Edit_1_h60b2t.jpg",
     linkedin: "",
   },
   // {
@@ -87,7 +87,7 @@ const board: BoardEntry[] = [
     description:
       "Mr. Cong Zhang joined our Board in August 2025. Mr. Zhang served as Vice President of Business at Sichuan Jindouyun Law Firm from 2023 to 2025, overseeing the firm’s business expansion. Prior to this, Mr. Zhang served as Project Director at Anhui Fengtai Environmental Technology Co., Ltd., from 2019 to 2022, where he innovated project management models and promoted the implementation of EPC + O models. Mr. Zhang served as the Operations Manager at Chongqing Huaxun Business Information Consulting Co., Ltd., from 2016 to 2018, where he standardized operations and optimized business processes. Mr. Zhang holds a Bachelor’s degree in Engineering Management from Chongqing Technology and Business University.",
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1754416890/Screenshot_2025-08-05_at_2.00.53_PM_i3ogkl.png",
+      "https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_200,c_limit/v1754416890/Screenshot_2025-08-05_at_2.00.53_PM_i3ogkl.png",
     linkedin: "",
   },
   {
@@ -96,7 +96,7 @@ const board: BoardEntry[] = [
     description:
       "Ms. Xiaoying Song has extensive experience in business administration and operations as well as investment management, and has been a co-founder of several companies. Ms. Song is currently the CEO of Sichuan Huanyu Interchange Group Co., Ltd, which she co-founded in January of 2020; the firm operates as a bidding agency for contracts, and engages in engineering supervision, construction labor subcontracting and other related businesses. From October 2016 to December 2020, Ms. Song co-founded and was the CEO of Chengdu Houshi Technology Co., Ltd, which engages in technology development, technical services and information technology consulting services. From July 2013 to September 2016, Ms. Song co-founded and was the CEO of Chengdu Huaxin Wealth Management Co., Ltd, an investment management, investment consulting, and business services firm. Ms. Song obtained an Associates Degree in Air Crew from Nanchang Institute of Technology in 2013.",
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1724428443/xiaoying-song_g5iuh2.jpg",
+      "https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_200,c_limit/v1724428443/xiaoying-song_g5iuh2.jpg",
     linkedin: "",
   },
   {
@@ -105,7 +105,7 @@ const board: BoardEntry[] = [
     description:
       'Mr. Junjie Dong is currently the Chief Technology Officer of Antelope Holdings (Chengdu) Co., Ltd., a wholly owned subsidiary of the Company that is engaged in computer consulting and software development. Mr. Dong is responsible for its strategic direction and overseeing its technological advancements, and he has held this position since July 2023. From February 2018 to July 2023, Mr. Dong was the Chief Executive Officer ("CEO") of Shenzhen Hongtaiju Technology Development Co., Ltd., an information technology company, where he was mainly responsible for the company\'s strategic planning and operational management. From August 2015 to December 2018, Mr. Dong was CEO of Shenzhen Weidai Yingxing Financial Services Co., Ltd, a company that provides financial services. From May 2013 to July 2015, he was the CEO of Shenzhen Hongtaiju Investment Consulting Co., Ltd., a company that provides financial services. Mr. Dong attended Hainan Vocational College of Science and Technology from March 2015 to December 2018, and received the junior college degree.',
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1724429516/WechatIMG21_rb7qxg.jpg",
+      "https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_200,c_limit/v1724429516/WechatIMG21_rb7qxg.jpg",
     linkedin: "",
   },
 ];

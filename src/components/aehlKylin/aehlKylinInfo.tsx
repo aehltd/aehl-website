@@ -35,7 +35,7 @@ export default function AehlKylinInfo() {
             </div>
             <div>
                 <img
-                    src="https://res.cloudinary.com/aehl/image/upload/v1724428454/image2-2_fjgknc.jpg"
+                    src="https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_1200,c_limit/v1724428454/image2-2_fjgknc.jpg"
                     alt="business"
                     className="w-full h-full object-cover"
                 />

@@ -26,7 +26,7 @@ const bondType: BondType[] = [
     investReturn: 6.5,
     state: false,
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1727193215/ATM1_mtiouh.jpg",
+      "https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_1200,c_limit/v1727193215/ATM1_mtiouh.jpg",
   },
   {
     name: "ATM No. 2",
@@ -36,7 +36,7 @@ const bondType: BondType[] = [
     investReturn: 9.5,
     state: true,
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1727193215/ATM2_uu5yzc.jpg",
+      "https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_1200,c_limit/v1727193215/ATM2_uu5yzc.jpg",
   },
   {
     name: "ATM No. 3",
@@ -46,7 +46,7 @@ const bondType: BondType[] = [
     investReturn: 12,
     state: false,
     image:
-      "https://res.cloudinary.com/aehl/image/upload/v1727193215/ATM3_k33hw7.jpg",
+      "https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_1200,c_limit/v1727193215/ATM3_k33hw7.jpg",
   },
 ];
 

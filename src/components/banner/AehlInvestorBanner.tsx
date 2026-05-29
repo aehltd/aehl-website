@@ -3,7 +3,7 @@ export default function AehlInvestorBanner() {
     <div>
       <img
         className="w-full"
-        src="https://res.cloudinary.com/aehl/image/upload/v1731689535/IR_Banner_dtzihl.png"
+        src="/images/IR_Banner_dtzihl.webp"
         alt="Picture of App"
       />
     </div>

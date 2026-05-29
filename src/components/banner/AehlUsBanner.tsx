@@ -3,7 +3,7 @@ export default function AehlUsBanner() {
     <div>
       <img
         className="w-full"
-        src="https://res.cloudinary.com/aehl/image/upload/v1731688135/AEHL_US_Banner_1_zdjq2z.png"
+        src="/images/AEHL_US_Banner_1_zdjq2z.webp"
         alt="Picture of App"
       />
     </div>

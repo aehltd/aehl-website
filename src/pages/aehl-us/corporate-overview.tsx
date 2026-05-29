@@ -66,7 +66,7 @@ export default function USOverview() {
               <div className="relative">
                 <img
                   className="object-cover w-full h-full"
-                  src="https://res.cloudinary.com/aehl/image/upload/v1724430443/Strengths_1_hwjy8h.png"
+                  src="/images/Strengths_1_hwjy8h.webp"
                   alt="bg"
                 />
                 <div className="absolute inset-0 bg-custom-gradient"></div>
@@ -83,7 +83,7 @@ export default function USOverview() {
               <div className="relative">
                 <img
                   className="object-cover w-full h-full"
-                  src="https://res.cloudinary.com/aehl/image/upload/v1724430438/Strengths-2.b90e5967_tczbv2.png"
+                  src="https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_800,c_limit/v1724430438/Strengths-2.b90e5967_tczbv2.png"
                   alt="bg"
                 />
                 <div className="absolute inset-0 bg-custom-gradient"></div>
@@ -102,7 +102,7 @@ export default function USOverview() {
               <div className="relative">
                 <img
                   className="object-cover w-full h-full"
-                  src="https://res.cloudinary.com/aehl/image/upload/v1724430445/Strengths-3.9e5a1c57_o0u5yc.png"
+                  src="https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_800,c_limit/v1724430445/Strengths-3.9e5a1c57_o0u5yc.png"
                   alt="bg"
                 />
                 <div className="absolute inset-0 bg-custom-gradient"></div>
@@ -119,7 +119,7 @@ export default function USOverview() {
               <div className="relative">
                 <img
                   className="object-cover w-full h-full"
-                  src="https://res.cloudinary.com/aehl/image/upload/v1724430442/Strengths-4.d4502d8c_vi00ya.png"
+                  src="https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_800,c_limit/v1724430442/Strengths-4.d4502d8c_vi00ya.png"
                   alt="bg"
                 />
                 <div className="absolute inset-0 bg-custom-gradient"></div>
@@ -140,7 +140,7 @@ export default function USOverview() {
       <div className="flex row flex-col space-y-8 md:flex-row md:justify-between md:space-x-16 md:space-y-0">
         <img
           className="md:w-1/2 object-cover h-full"
-          src="https://res.cloudinary.com/aehl/image/upload/v1724430439/img6.c41aed10_sjc3zh.png"
+          src="https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_1200,c_limit/v1724430439/img6.c41aed10_sjc3zh.png"
           alt="bg"
         />
         <div className="flex flex-col md:w-1/2 justify-center">

@@ -32,7 +32,7 @@ export default function USCareer() {
         className="bg-local flex w-full h-[40vh] justify-center"
         style={{
           backgroundImage:
-            "url('https://res.cloudinary.com/aehl/image/upload/v1724430441/img4.50ec3eb4_vgyxwa.png')",
+            "url('https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_1920,c_limit/v1724430441/img4.50ec3eb4_vgyxwa.png')",
           backgroundSize: "cover",
         }}
       ></div>
@@ -42,7 +42,7 @@ export default function USCareer() {
         <div className="md:w-1/2 ml-0 min-h-[400px] md:min-h-[500px]">
           <img
             className="object-contain w-full h-full"
-            src="https://res.cloudinary.com/aehl/image/upload/v1770739393/Career_qvefdt.jpg"
+            src="https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_1200,c_limit/v1770739393/Career_qvefdt.jpg"
             alt="Career at AEHL"
           />
         </div>
