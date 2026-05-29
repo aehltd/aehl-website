@@ -31,7 +31,7 @@ export default function KylinModel() {
         className="bg-local flex w-full h-[40vh] bg-center justify-center"
         style={{
           backgroundImage:
-            "url('https://res.cloudinary.com/aehl/image/upload/v1724428457/image5-1_vawwhv.jpg')",
+            "url('https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_1920,c_limit/v1724428457/image5-1_vawwhv.jpg')",
           backgroundSize: "cover ",
         }}
       ></div>

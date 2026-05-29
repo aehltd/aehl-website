@@ -93,7 +93,7 @@ export default function NavBar({
         <div className="flex items-center pl-4 py-2">
           <Link href="/">
             <img
-              src="https://res.cloudinary.com/aehl/image/upload/v1724428463/%E5%B0%8F%E9%BB%91%E8%89%B2.jpg_dsu0fh.png"
+              src="https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_200,c_limit/v1724428463/%E5%B0%8F%E9%BB%91%E8%89%B2.jpg_dsu0fh.png"
               alt="logo"
               className="h-45 w-45"
             />

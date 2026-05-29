@@ -7,7 +7,7 @@ export default function ContactUs() {
         className="bg-top flex w-full h-[60vh] justify-center"
         style={{
           backgroundImage:
-            "url('https://res.cloudinary.com/aehl/image/upload/t_small size/v1725376615/new-york-view-with-empire-state-building_zzhpya.jpg')",
+            "url('https://res.cloudinary.com/aehl/image/upload/t_small size,f_auto,q_auto/v1725376615/new-york-view-with-empire-state-building_zzhpya.jpg')",
           backgroundSize: "cover",
         }}
       >

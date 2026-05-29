@@ -11,7 +11,7 @@ export default function AehlBtcInfo() {
           <div className='flex justify-center px-5 pb-5'>
             <img
               className="object-cover rounded-3xl md:w-3/4 w-1/2"
-              src="https://res.cloudinary.com/aehl/image/upload/v1731381615/BTC_Logo_t2fjw6.jpg"
+              src="https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_600,c_limit/v1731381615/BTC_Logo_t2fjw6.jpg"
               alt="App Logo"
             />
           </div>
@@ -26,7 +26,7 @@ export default function AehlBtcInfo() {
             <div className='flex justify-center'>
               <img
                 className='h-auto max-w-full object-contain aspect-[4/1]'
-                src="https://res.cloudinary.com/aehl/image/upload/v1732031089/GetItOnGooglePlay_Badge_Web_color_English_antwwp.png"
+                src="https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_400,c_limit/v1732031089/GetItOnGooglePlay_Badge_Web_color_English_antwwp.png"
                 alt="Download on the Google Play"
               />
             </div>

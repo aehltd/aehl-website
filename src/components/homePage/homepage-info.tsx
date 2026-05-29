@@ -31,14 +31,14 @@ export default function HomePageInfo() {
             <div className='md:col-span-2 col-span-4'>
                 <img
                     className='w-full rounded-lg'
-                    src="https://res.cloudinary.com/aehl/image/upload/v1731948852/Homepage_Energy_lghdgb.png"
+                    src="/images/Homepage_Energy_lghdgb.webp"
                     alt="Picture of Kylin"
                 />
             </div>
             <div className='md:col-span-2 col-span-4 md:order-1 order-2'>
                 <img
                     className='w-full rounded-lg'
-                    src="https://res.cloudinary.com/aehl/image/upload/v1731942260/AEHL_Banner_tnuwei.png"
+                    src="/images/AEHL_Banner_tnuwei.webp"
                     alt="Picture of Kylin"
                 />
             </div>

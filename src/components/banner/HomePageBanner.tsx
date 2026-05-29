@@ -3,7 +3,7 @@ export default function HomePageBanner() {
     <div>
       <img
         className="w-full"
-        src="https://res.cloudinary.com/aehl/image/upload/v1731685625/Home_Banner_kbcbgp.png"
+        src="/images/Home_Banner_kbcbgp.webp"
         alt="Picture of App"
       />
     </div>

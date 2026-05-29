@@ -10,7 +10,7 @@ export default function USProducts() {
         className="bg-local flex w-full h-[40vh] justify-center"
         style={{
           backgroundImage:
-            "url('https://res.cloudinary.com/aehl/image/upload/v1724430441/img4.50ec3eb4_vgyxwa.png')",
+            "url('https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_1920,c_limit/v1724430441/img4.50ec3eb4_vgyxwa.png')",
           backgroundSize: "cover",
         }}
       ></div>
@@ -18,7 +18,7 @@ export default function USProducts() {
         <div className="md:w-1/2 ml-0">
           <img
             className="object-cover h-full w-full"
-            src="https://res.cloudinary.com/aehl/image/upload/v1724430442/img7.6170bfe8_vq3cnh.png"
+            src="https://res.cloudinary.com/aehl/image/upload/f_auto,q_auto,w_1200,c_limit/v1724430442/img7.6170bfe8_vq3cnh.png"
             alt="bg"
           />
         </div>
